@@ -3,10 +3,14 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 import './ColorBox.css'
 
 export class ColorBox extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { copied: false }
+  }
   render() {
     const { name, background } = this.props
     return (
-      <CopyToClipboard text={background}>
+      <CopyToClipboard text={background} >
         <div style={{ background }} className='ColorBox'>
           <div className="copy-container">
             <div className="box-content">
