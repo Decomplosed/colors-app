@@ -12,6 +12,7 @@ export class ColorBox extends Component {
     return (
       <CopyToClipboard text={background} >
         <div style={{ background }} className='ColorBox'>
+          <div style={{ background }} className="copy-overlay"></div>
           <div className="copy-container">
             <div className="box-content">
               <span>{name}</span>
