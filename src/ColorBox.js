@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class ColorBox extends Component {
   render() {
     return (
-      <div className='ColorBox'>
+      <div style={{ background: this.props.background }} className='ColorBox'>
         <span>MORE</span>
       </div>
     )
