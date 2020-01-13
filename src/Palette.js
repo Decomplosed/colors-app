@@ -27,6 +27,7 @@ export class Palette extends Component {
           defaultValue={this.state.level}
           min={100}
           max={900}
+          step={100}
           onAfterChange={this.changeLevel}
         />
         <div className="Palette-colors">
