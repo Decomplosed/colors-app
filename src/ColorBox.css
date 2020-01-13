@@ -88,3 +88,11 @@
   opacity: 0;
   color: #fff;
 }
+
+.copy-msg.show {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 25;
+  transition: all 0.4s ease-in-out;
+  transition-delay: 0.3s;
+}
