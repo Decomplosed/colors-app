@@ -44,3 +44,5 @@ function generateScale(hexColor, numberOfColors) {
     .mode('lab')
     .colors(numberOfColors)
 }
+
+export { generatePalette }
