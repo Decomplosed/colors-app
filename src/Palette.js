@@ -9,6 +9,7 @@ export class Palette extends Component {
   constructor(props) {
     super(props)
     this.state = { level: 500 }
+    this.changeLevel = this.changeLevel.bind(this)
   }
 
   changeLevel(level) {
