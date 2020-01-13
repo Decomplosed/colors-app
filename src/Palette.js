@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ColorBox from './ColorBox'
 import Slider from 'rc-slider'
 import './Palette.css'
+import 'rc-slider/assets/index.css'
 
 export class Palette extends Component {
   render() {
