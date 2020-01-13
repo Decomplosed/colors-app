@@ -16,7 +16,7 @@ export class Palette extends Component {
 
     return (
       <div className='Palette'>
-        <Slider />
+        <Slider defaultValue={this.state.level} min={100} max={900} />
         <div className="Palette-colors">
           {colorBoxes}
         </div>
