@@ -16,7 +16,12 @@ export class Palette extends Component {
 
     return (
       <div className='Palette'>
-        <Slider defaultValue={this.state.level} min={100} max={900} />
+        <Slider
+          defaultValue={this.state.level}
+          min={100}
+          max={900}
+          onAfterChange={this.changeLevel}
+        />
         <div className="Palette-colors">
           {colorBoxes}
         </div>
