@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import ColorBox from './ColorBox'
+import Slider from 'rc-slider'
 import './Palette.css'
 
 export class Palette extends Component {
