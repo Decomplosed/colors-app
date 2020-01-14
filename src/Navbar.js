@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Select from '@material-ui/core/Select'
 import MenuItem from '@material-ui/core/MenuItem'
 import Snackbar from '@material-ui/core/Snackbar'
-import CloseIcon from '@material-ui/core/Close'
+import CloseIcon from '@material-ui/icons/Close'
 
 import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css'
