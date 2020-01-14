@@ -21,6 +21,10 @@ export class Navbar extends Component {
     this.props.handleChange(e.target.value)
   }
 
+  closeSnackbar() {
+    this.setState({open: false})
+  }
+
   render() {
     const { level, changeLevel } = this.props
     const { format } = this.state
@@ -57,7 +61,7 @@ export class Navbar extends Component {
             'aria-describedby': 'message-id'
           }}
           action={[
-            <IconButton>
+            <IconButton onClick={this.closeSnackbar}>
               <CloseIcon />
             </IconButton>
           ]}
