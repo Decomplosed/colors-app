@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Select from '@material-ui/core/Select'
 import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css'
 import './Navbar.css'
