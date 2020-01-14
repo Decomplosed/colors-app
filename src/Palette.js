@@ -17,8 +17,8 @@ export class Palette extends Component {
     this.setState({ level })
   }
 
-  changeFormat(e) {
-    alert(e.target.value)
+  changeFormat(val) {
+    alert(val)
   }
 
   render() {
@@ -30,7 +30,11 @@ export class Palette extends Component {
 
     return (
       <div className='Palette'>
-        <Navbar level={level} changeLevel={this.changeLevel} />
+        <Navbar
+          level={level}
+          changeLevel={this.changeLevel}
+          handleChange={this.changeFormat}
+        />
         <div className='Palette-colors'>
           {colorBoxes}
         </div>
