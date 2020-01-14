@@ -9,6 +9,7 @@ export class Navbar extends Component {
   constructor(props) {
     super(props)
     this.state = { format: 'hex' }
+    this.handleChange = this.handleChange.bind(this)
   }
 
   handleChange(e) {
