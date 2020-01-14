@@ -14,6 +14,7 @@ export class Navbar extends Component {
     super(props)
     this.state = { format: 'hex', open: true }
     this.handleChange = this.handleChange.bind(this)
+    this.closeSnackbar = this.closeSnackbar.bind(this)
   }
 
   handleChange(e) {
@@ -22,7 +23,7 @@ export class Navbar extends Component {
   }
 
   closeSnackbar() {
-    this.setState({open: false})
+    this.setState({ open: false })
   }
 
   render() {
