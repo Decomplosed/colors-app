@@ -11,7 +11,7 @@ import './Navbar.css'
 export class Navbar extends Component {
   constructor(props) {
     super(props)
-    this.state = { format: 'hex' }
+    this.state = { format: 'hex', open: true }
     this.handleChange = this.handleChange.bind(this)
   }
 
