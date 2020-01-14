@@ -57,7 +57,9 @@ export class Navbar extends Component {
             'aria-describedby': 'message-id'
           }}
           action={[
-            <IconButton></IconButton>
+            <IconButton>
+              <CloseIcon />
+            </IconButton>
           ]}
         />
       </header>
