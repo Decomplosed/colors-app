@@ -6,6 +6,11 @@ import 'rc-slider/assets/index.css'
 import './Navbar.css'
 
 export class Navbar extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { format: 'hex' }
+  }
+
   render() {
     const { level, changeLevel } = this.props
     return (
