@@ -11,6 +11,11 @@ export class Navbar extends Component {
     this.state = { format: 'hex' }
   }
 
+  handleChange(e) {
+    this.setState({ format: e.target.value })
+    this.props.handleChange(this.state.format)
+  }
+
   render() {
     const { level, changeLevel, handleChange } = this.props
     const { format } = this.state
