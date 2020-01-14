@@ -57,7 +57,7 @@ export class Navbar extends Component {
           anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
           open={this.state.open}
           autoHideDuration={2000}
-          message={<span id='message-id'>Format Changed!</span>}
+          message={<span id='message-id'>Format Changed To {format.toUpperCase()}!</span>}
           ContentProps={{
             'aria-describedby': 'message-id'
           }}
