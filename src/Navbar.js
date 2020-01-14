@@ -11,7 +11,7 @@ export class Navbar extends Component {
         <div className="logo">
           <a href='#'>reactcolorpicker</a>
         </div>
-        <div className="slide-container">
+        <div className="slider-container">
           <span>Level: {level}</span>
           <div className='slider'>
             <Slider
@@ -22,6 +22,11 @@ export class Navbar extends Component {
               onAfterChange={changeLevel}
             />
           </div>
+        </div>
+        <div className="select-container">
+          <Select>
+
+          </Select>
         </div>
       </header>
     )
