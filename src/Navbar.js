@@ -51,6 +51,14 @@ export class Navbar extends Component {
         <Snackbar
           anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
           open={this.state.open}
+          autoHideDuration={2000}
+          message={<span id='message-id'>Format Changed!</span>}
+          ContentProps={{
+            'aria-describedby': 'message-id'
+          }}
+          action={[
+            <IconButton></IconButton>
+          ]}
         />
       </header>
     )
