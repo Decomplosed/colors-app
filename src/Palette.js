@@ -8,7 +8,7 @@ export class Palette extends Component {
 
   constructor(props) {
     super(props)
-    this.state = { level: 500 }
+    this.state = { level: 500, format: 'hex' }
     this.changeLevel = this.changeLevel.bind(this)
     this.changeFormat = this.changeFormat.bind(this)
   }
