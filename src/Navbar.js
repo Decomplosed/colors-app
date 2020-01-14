@@ -26,7 +26,7 @@ export class Navbar extends Component {
           </div>
         </div>
         <div className="select-container">
-          <Select>
+          <Select onChange={this.props.handleChange}>
             <MenuItem value='hex'>HEX - #ffffff</MenuItem>
             <MenuItem value='rgb'>RGB - rgb(255,255,255)</MenuItem>
             <MenuItem value='rgba'>RGBA - rgba(255,255,255, 1.0)</MenuItem>
