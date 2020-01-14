@@ -10,6 +10,7 @@ export class Palette extends Component {
     super(props)
     this.state = { level: 500 }
     this.changeLevel = this.changeLevel.bind(this)
+    this.changeFormat = this.changeFormat.bind(this)
   }
 
   changeLevel(level) {
