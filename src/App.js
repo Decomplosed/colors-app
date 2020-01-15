@@ -9,8 +9,8 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path='/' />
-        <Route exact path='/palette/:id' />
+        <Route exact path='/' render={() => <h1>PALETTE LIST GOES HERE</h1>} />
+        <Route exact path='/palette/:id' render={() => <Palette />} />
       </Switch>
       // <div className="App" >
       //   <Palette palette={generatePalette(seedColors[4])} />
