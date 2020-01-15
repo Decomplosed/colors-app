@@ -38,6 +38,9 @@ export class Palette extends Component {
         <div className='Palette-colors'>
           {colorBoxes}
         </div>
+        <footer className='Palette-footer'>
+          
+        </footer>
       </div>
     )
   }
