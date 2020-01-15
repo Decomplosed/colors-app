@@ -39,7 +39,7 @@ export class Palette extends Component {
           {colorBoxes}
         </div>
         <footer className='Palette-footer'>
-
+          {paletteName}
         </footer>
       </div>
     )
