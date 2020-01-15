@@ -8,7 +8,9 @@ import { generatePalette } from './colorHelpers'
 class App extends Component {
   render() {
     return (
+      
       <Route exact path='/' />
+      <Route exact path='/palette/:id' />
       <div className="App" >
         <Palette palette={generatePalette(seedColors[4])} />
       </div>
