@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        <Route exact path='/' render={() => <h1>PALETTE LIST GOES HERE</h1>} />
+        <Route exact path='/' render={() => <PaletteList />} />
         <Route
           exact
           path='/palette/:id'
