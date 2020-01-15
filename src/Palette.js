@@ -22,7 +22,7 @@ export class Palette extends Component {
   }
 
   render() {
-    const { colors } = this.props.palette
+    const { colors, paletteName } = this.props.palette
     const { level, format } = this.state
     const colorBoxes = colors[level].map(color => (
       <ColorBox background={color[format]} name={color.name} />
@@ -39,7 +39,7 @@ export class Palette extends Component {
           {colorBoxes}
         </div>
         <footer className='Palette-footer'>
-          
+
         </footer>
       </div>
     )
