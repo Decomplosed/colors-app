@@ -14,7 +14,7 @@ export class PaletteList extends Component {
     const { palettes, classes } = this.props
     return (
       <div className={classes.root}>
-        <div className='container'></div>
+        <div className={classes.container}></div>
         <h1>React Colors</h1>
         {palettes.map(palette => (
           <MiniPalette {...palette}/>
