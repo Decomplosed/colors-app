@@ -15,13 +15,16 @@ const styles = {
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    border: '1px solid white'
   },
   nav: {
-
+    display: 'flex',
+    width: '100%',
+    justifyContent: 'space-between'
   },
   palettes: {
-
+    
   }
 }
 
