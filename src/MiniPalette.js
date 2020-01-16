@@ -33,12 +33,13 @@ const styles = {
 }
 
 function MiniPalette(props) {
-  const {classes, paletteName, emoji} = props
-  console.log(classes)
+  const {classes, paletteName, emoji, colors} = props
+  const miniColorBoxes
+
   return (
     <div className={classes.root}>
       <div className={classes.colors}>
-
+        
       </div>
       <h5 className={classes.title}>{paletteName} <span className={classes.emoji}>{emoji}</span></h5>
     </div>
