@@ -5,15 +5,19 @@ import  {withStyles} from '@material-ui/styles'
 const styles = {
   root: {
     backgroundColor: 'blue',
+    height: '100%',
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'center'
   },
   container: {
-    
+
   },
   nav: {
 
   },
   palettes: {
-    
+
   }
 }
 
