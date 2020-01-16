@@ -16,14 +16,15 @@ export class PaletteList extends Component {
       <div className={classes.root}>
         <div className={classes.container}>
           <nav className={classes.nav}>
-            
+            <h1>React Colors</h1>
           </nav>
+          <div className={classes.palettes}>
+            {palettes.map(palette => (
+              <MiniPalette {...palette}/>
+            ))
+            }
+          </div>
         </div>
-        <h1>React Colors</h1>
-        {palettes.map(palette => (
-          <MiniPalette {...palette}/>
-        ))
-        }
       </div>
     )
   }
