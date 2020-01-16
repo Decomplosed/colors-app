@@ -24,14 +24,14 @@ const styles = {
 }
 
 function MiniPalette(props) {
-  const {classes, name, emoji} = props
+  const {classes, paletteName, emoji} = props
   console.log(classes)
   return (
     <div className={classes.root}>
       <div className={classes.colors}>
 
       </div>
-<h5 className={classes.title}>{name} <span className={classes.emoji}>{emoji}</span></h5>
+<h5 className={classes.title}>{paletteName} <span className={classes.emoji}>{emoji}</span></h5>
     </div>
   )
 }
