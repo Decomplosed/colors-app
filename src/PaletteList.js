@@ -5,7 +5,15 @@ import  {withStyles} from '@material-ui/styles'
 const styles = {
   root: {
     backgroundColor: 'blue',
+  },
+  container: {
+    
+  },
+  nav: {
 
+  },
+  palettes: {
+    
   }
 }
 
