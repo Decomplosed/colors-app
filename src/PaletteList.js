@@ -11,9 +11,9 @@ const styles = {
 
 export class PaletteList extends Component {
   render() {
-    const { palettes } = this.props
+    const { palettes, classes } = this.props
     return (
-      <div className={this.props.classes.root}>
+      <div className={classes.root}>
         <div className='container'></div>
         <h1>React Colors</h1>
         {palettes.map(palette => (
