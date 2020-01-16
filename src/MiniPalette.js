@@ -2,7 +2,25 @@ import React from 'react'
 import  {withStyles} from '@material-ui/styles'
 
 const styles = {
+  root: {
+    backgroundColor: 'white',
+    borderRadius: '5px',
+    padding: '0.5rem',
+    position: 'relative',
+    overflow: 'hidden',
+    '&hover': {
+      cursor: 'pointer'
+    }
+  },
+  colors: {
 
+  },
+  title: {
+
+  },
+  emoji: {
+
+  }
 }
 
 function MiniPalette(props) {
