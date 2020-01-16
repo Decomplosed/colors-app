@@ -17,4 +17,4 @@ export class PaletteList extends Component {
   }
 }
 
-export default PaletteList
+export default withStyles(styles)(PaletteList)
