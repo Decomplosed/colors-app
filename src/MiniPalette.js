@@ -15,9 +15,11 @@ function MiniPalette(props) {
   const {classes} = props
   console.log(classes)
   return (
-    <div className={classes.main}>
-      <h1>Mini Palette</h1>
-      <section className={classes.secondary}>fsdfsdfgdsgdsg</section>
+    <div className={classes.root}>
+      <div className={classes.colors}>
+
+      </div>
+      <h5 className={classes.title}></h5>
     </div>
   )
 }
