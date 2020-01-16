@@ -13,7 +13,7 @@ function MiniPalette(props) {
       <div className={classes.colors}>
 
       </div>
-<h5 className={classes.title}>{name} <span>{emoji}</span></h5>
+<h5 className={classes.title}>{name} <span className={classes.emoji}>{emoji}</span></h5>
     </div>
   )
 }
