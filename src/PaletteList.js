@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import MiniPalette from './MiniPalette'
 import { Link } from 'react-router-dom'
 
 export class PaletteList extends Component {
