@@ -27,7 +27,8 @@ const styles = {
     position: 'relative'
   },
   emoji: {
-
+    marginLeft: '0.5rem',
+    fontSize: '1.5rem'
   }
 }
 
