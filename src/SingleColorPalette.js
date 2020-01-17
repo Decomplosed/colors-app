@@ -6,7 +6,16 @@ export class SingleColorPalette extends Component {
     this._shades = this.gatherShades(this.props.palette, this.props.colorId)
   }
 
-  gatherShades() {}
+  gatherShades(palette, colorToFilterBy) {
+    let shades = []
+    let allColors = palette.colors
+
+    for (let key in allColors) {
+      shades = shades.concat(
+        allColors[key].filter(color => color.id === colorToFilterBy)
+      )
+    }
+  }
 
   render() {
     return (
