@@ -28,7 +28,7 @@
   opacity: 0;
 }
 
-.ColorBox:hover .copy-button{
+.ColorBox:hover .copy-button {
   opacity: 1;
   transition: 0.5s;
 }
@@ -56,6 +56,7 @@
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .copy-overlay {
