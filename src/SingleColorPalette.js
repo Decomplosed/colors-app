@@ -15,6 +15,8 @@ export class SingleColorPalette extends Component {
         allColors[key].filter(color => color.id === colorToFilterBy)
       )
     }
+
+    return shades
   }
 
   render() {
