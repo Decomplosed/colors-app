@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ColorBox from './ColorBox'
 
 export class SingleColorPalette extends Component {
   constructor(props) {
@@ -16,7 +17,7 @@ export class SingleColorPalette extends Component {
       )
     }
 
-    return shades
+    return shades.slice(1)
   }
 
   render() {
