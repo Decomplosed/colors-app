@@ -46,7 +46,7 @@ export class SingleColorPalette extends Component {
         <Navbar handleChange={this.changeFormat} showingAllColors={false}/>
         <div className='Palette-colors'>{colorBoxes}
           <div className="go-back ColorBox">
-            <a className='back-button'>Go Back</a>
+            <Link to={`/palette/${id}`} className='back-button'>Go Back</Link>
           </div>
         </div>
         <PaletteFooter paletteName={paletteName} emoji={emoji}/>
