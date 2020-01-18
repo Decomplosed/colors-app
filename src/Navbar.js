@@ -28,14 +28,14 @@ export class Navbar extends Component {
   }
 
   render() {
-    const { level, changeLevel } = this.props
+    const { level, changeLevel, showingAllColors } = this.props
     const { format } = this.state
     return (
       <header className='Navbar'>
         <div className="logo">
           <Link to='/'>reactcolorpicker</Link>
         </div>
-        { this.props.showingAllColors && (
+        { showingAllColors && (
         <div className="slider-container">
           <span>Level: {level}</span>
           <div className='slider'>
