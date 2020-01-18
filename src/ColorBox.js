@@ -20,6 +20,7 @@ export class ColorBox extends Component {
   render() {
     const { name, background, moreUrl, showLink } = this.props
     const { copied } = this.state
+    const isDarkColor = chroma(background).liminance() <= 0.05
     return (
       <CopyToClipboard text={background} onCopy={this.changeCopyState}>
         <div style={{ background }} className='ColorBox'>
