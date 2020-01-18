@@ -114,3 +114,7 @@
   font-size: 2rem;
   font-weight: 200;
 }
+
+.SingleColorPalette .ColorBox {
+  height: 50%;
+}
