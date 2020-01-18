@@ -31,7 +31,7 @@ export class ColorBox extends Component {
           />
           <div className={`copy-msg ${copied && 'show'}`}>
             <h1>copied!</h1>
-            <p>{this.props.background}</p>
+            <p className={isLightColor && 'dark-text'}>{this.props.background}</p>
           </div>
           <div className='copy-container'>
             <div className='box-content'>
