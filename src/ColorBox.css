@@ -131,3 +131,7 @@
 .light-text {
   color: white;
 }
+
+.ColorBox .dark-text {
+  color: black;
+}
