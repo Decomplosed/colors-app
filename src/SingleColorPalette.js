@@ -28,18 +28,19 @@ export class SingleColorPalette extends Component {
   }
 
   render() {
+    const {format} = this.state
     const colorBoxes = this._shades.map(color => (
       <ColorBox
         key={color.id}
         name={color.name}
-        background={color.hex}
+        background={color[format]}
         showLink={false}
       />
     ))
 
     return (
       <div className='Palette'>
-        <Navbar />
+        <Navbar handleChange={this.changeFormat}/>
         <h1>Single Color Palette</h1>
         <div className='Palette-colors'>{colorBoxes}</div>
       </div>
