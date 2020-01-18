@@ -22,6 +22,10 @@ export class SingleColorPalette extends Component {
     return shades.slice(1)
   }
 
+  changeFormat(val) {
+    this.setState({ format: val })
+  }
+
   render() {
     const colorBoxes = this._shades.map(color => (
       <ColorBox
