@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import ColorBox from './ColorBox'
+import Navbar from './Navbar'
 
 export class SingleColorPalette extends Component {
   constructor(props) {
     super(props)
     this._shades = this.gatherShades(this.props.palette, this.props.colorId)
+    this.state = {format: 'hex'}
   }
 
   gatherShades(palette, colorToFilterBy) {
