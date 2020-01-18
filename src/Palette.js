@@ -42,6 +42,7 @@ export class Palette extends Component {
           level={level}
           changeLevel={this.changeLevel}
           handleChange={this.changeFormat}
+          showingAllCOlors
         />
         <div className='Palette-colors'>
           {colorBoxes}
