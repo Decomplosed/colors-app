@@ -127,3 +127,7 @@
 .ColorBox.go-back {
   background-color: #000000;
 }
+
+.light-text {
+  color: white;
+}
