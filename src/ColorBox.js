@@ -16,7 +16,8 @@ const styles = {
     cursor: 'pointer',
     marginBottom: '-3.5px',
     '&:hover button': {
-      opacity: '1'
+      opacity: '1',
+      transition: '0.5s'
     }
   },
   copyText: {
