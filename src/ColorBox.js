@@ -14,7 +14,10 @@ const styles = {
     display: 'inline-block',
     position: 'relative',
     cursor: 'pointer',
-    marginBottom: '-3.5px'
+    marginBottom: '-3.5px',
+    '&:hover button': {
+      opacity: '1'
+    }
   },
   copyText: {
     color: props =>
@@ -60,7 +63,8 @@ const styles = {
     lineHeight: '30px',
     textTransform: 'uppercase',
     textDecoration: 'none',
-    border: 'none'
+    border: 'none',
+    opacity: '0'
   }
 }
 
