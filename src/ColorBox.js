@@ -84,7 +84,7 @@ export class ColorBox extends Component {
     const isLightColor = chroma(background).luminance() >= 0.7
     return (
       <CopyToClipboard text={background} onCopy={this.changeCopyState}>
-        <div style={{ background }} className="ColorBox">
+        <div style={{ background }} className={classes.ColorBox}>
           <div
             style={{ background }}
             className={`copy-overlay ${copied && 'show'}`}
