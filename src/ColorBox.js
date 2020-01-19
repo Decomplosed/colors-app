@@ -20,7 +20,7 @@ export class ColorBox extends Component {
   }
 
   render() {
-    const { name, background, moreUrl, showLink } = this.props
+    const { name, background, moreUrl, showLink, classes } = this.props
     const { copied } = this.state
     const isDarkColor = chroma(background).luminance() <= 0.05
     const isLightColor = chroma(background).luminance() >= 0.7
