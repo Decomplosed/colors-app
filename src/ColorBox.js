@@ -85,6 +85,12 @@ const styles = {
     height: '100%',
     transition: 'transform 0.6s ease-in-out',
     transform: 'scale(0.1)'
+  },
+  showOverlay: {
+    opacity: '1',
+    transform: 'scale(50)',
+    zIndex: '10',
+    position: 'absolute'
   }
 }
 
