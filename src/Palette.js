@@ -4,9 +4,7 @@ import Navbar from './Navbar'
 import PaletteFooter from './PaletteFooter'
 import './Palette.css'
 
-
 export class Palette extends Component {
-
   constructor(props) {
     super(props)
     this.state = { level: 500, format: 'hex' }
@@ -38,17 +36,15 @@ export class Palette extends Component {
     ))
 
     return (
-      <div className='Palette'>
+      <div className="Palette">
         <Navbar
           level={level}
           changeLevel={this.changeLevel}
           handleChange={this.changeFormat}
           showingAllColors
         />
-        <div className='Palette-colors'>
-          {colorBoxes}
-        </div>
-        <PaletteFooter paletteName={paletteName} emoji={emoji}/>
+        <div className="Palette-colors">{colorBoxes}</div>
+        <PaletteFooter paletteName={paletteName} emoji={emoji} />
       </div>
     )
   }
