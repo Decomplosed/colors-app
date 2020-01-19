@@ -106,6 +106,13 @@ const styles = {
     transform: 'scale(0.1)',
     opacity: '0',
     color: '#fff'
+  },
+  showMsg: {
+    opacity: '1',
+    transform: 'scale(1)',
+    zIndex: '25',
+    transition: 'all 0.4s ease-in-out',
+    transitionDelay: '0.3s'
   }
 }
 
