@@ -136,7 +136,8 @@ export class ColorBox extends Component {
         <div style={{ background }} className={classes.ColorBox}>
           <div
             style={{ background }}
-            className={`copy-overlay ${copied && 'show'}`}
+            className={`${classes.copyOverlay} ${copied &&
+              classes.showOverlay}`}
           />
           <div className={`copy-msg ${copied && 'show'}`}>
             <h1>copied!</h1>
