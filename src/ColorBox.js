@@ -8,8 +8,8 @@ import './ColorBox.css'
 
 const styles = {
   ColorBox: {
+    height: props => (props.showingFullPalette ? '25%' : '50%'),
     width: '20%',
-    height: '25%',
     margin: '0 auto',
     display: 'inline-block',
     position: 'relative',
