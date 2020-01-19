@@ -32,6 +32,10 @@ const styles = {
     textTransform: 'uppercase'
   },
   copyBtn: {
+    color: props =>
+      chroma(props.background).luminance() >= 0.7
+        ? 'rgba(0, 0, 0, 0.6)'
+        : 'white',
     width: '100px',
     height: ' 30px',
     position: 'absolute',
@@ -45,7 +49,6 @@ const styles = {
     background: 'rgba(255, 255, 255, 0.3)',
     fontSize: '1rem',
     lineHeight: '30px',
-    color: '#fff',
     textTransform: 'uppercase',
     textDecoration: 'none',
     border: ' none'
