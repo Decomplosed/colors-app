@@ -7,6 +7,15 @@ import { withStyles } from '@material-ui/styles'
 import './ColorBox.css'
 
 const styles = {
+  ColorBox: {
+    width: '20%',
+    height: '25%',
+    margin: '0 auto',
+    display: 'inline-block',
+    position: 'relative',
+    cursor: 'pointer',
+    marginBottom: '-3.5px'
+  },
   copyText: {
     color: props =>
       chroma(props.background).luminance() >= 0.7 ? 'black' : 'white'
@@ -51,7 +60,7 @@ const styles = {
     lineHeight: '30px',
     textTransform: 'uppercase',
     textDecoration: 'none',
-    border: ' none'
+    border: 'none'
   }
 }
 
