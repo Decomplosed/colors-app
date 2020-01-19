@@ -65,6 +65,17 @@ const styles = {
     textDecoration: 'none',
     border: 'none',
     opacity: '0'
+  },
+  boxContent: {
+    position: 'absolute',
+    width: '100%',
+    left: '0px',
+    bottom: '0px',
+    padding: '10px',
+    color: '#000000',
+    letterSpacing: '1px',
+    textTransform: 'uppercase',
+    fontSize: '12px'
   }
 }
 
