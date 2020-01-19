@@ -97,9 +97,7 @@ export class ColorBox extends Component {
             <div className="box-content">
               <span className={classes.colorName}>{name}</span>
             </div>
-            <button className={`copy-button ${isLightColor && 'dark-text'}`}>
-              Copy
-            </button>
+            <button className={classes.copyBtn}>Copy</button>
           </div>
           {showLink && (
             <Link to={moreUrl} onClick={e => e.stopPropagation()}>
