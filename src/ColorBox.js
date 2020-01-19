@@ -6,6 +6,17 @@ import { withStyles } from '@material-ui/styles'
 
 import './ColorBox.css'
 
+const styles = {
+  copyText: {
+    color: props =>
+      chroma(props.background).luminance() >= 0.7 ? 'black' : 'white'
+  },
+  colorName: {
+    color: props =>
+      chroma(props.background).luminance() <= 0.08 ? 'white' : 'black'
+  }
+}
+
 export class ColorBox extends Component {
   constructor(props) {
     super(props)
@@ -33,13 +44,11 @@ export class ColorBox extends Component {
           />
           <div className={`copy-msg ${copied && 'show'}`}>
             <h1>copied!</h1>
-            <p className={isLightColor && 'dark-text'}>
-              {this.props.background}
-            </p>
+            <p className={classes.copyText}>{this.props.background}</p>
           </div>
           <div className="copy-container">
             <div className="box-content">
-              <span className={isDarkColor && 'light-text'}>{name}</span>
+              <span className={classes.colorName}>{name}</span>
             </div>
             <button className={`copy-button ${isLightColor && 'dark-text'}`}>
               Copy
