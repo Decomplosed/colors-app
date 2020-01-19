@@ -14,6 +14,20 @@ const styles = {
   colorName: {
     color: props =>
       chroma(props.background).luminance() <= 0.08 ? 'white' : 'black'
+  },
+  seeMoreBtn: {
+    color: props =>
+      chroma(props.background).luminance() >= 0.7 ? 'black' : 'white',
+    background: 'rgba(255, 255, 255, 0.3)',
+    position: 'absolute',
+    border: 'none',
+    right: '0px',
+    bottom: '0px',
+    width: '60px',
+    height: '30px',
+    textAlign: 'center',
+    lineHeight: '30px',
+    textTransform: 'uppercase'
   }
 }
 
