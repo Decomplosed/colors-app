@@ -50,20 +50,6 @@
   font-size: 12px;
 }
 
-.see-more {
-  background: rgba(255, 255, 255, 0.3);
-  position: absolute;
-  border: none;
-  right: 0px;
-  bottom: 0px;
-  width: 60px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 .copy-overlay {
   opacity: 0;
   z-index: 0;
