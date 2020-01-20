@@ -54,4 +54,4 @@ export class Palette extends Component {
   }
 }
 
-export default Palette
+export default withStyles(styles)(Palette)
