@@ -43,6 +43,7 @@ export class SingleColorPalette extends Component {
 
   render() {
     const { format } = this.state
+    const { classes } = this.props
     const { paletteName, emoji, id } = this.props.palette
     const colorBoxes = this._shades.map(color => (
       <ColorBox
@@ -54,9 +55,9 @@ export class SingleColorPalette extends Component {
     ))
 
     return (
-      <div className="SingleColorPalette Palette">
+      <div className={classes.palette}>
         <Navbar handleChange={this.changeFormat} showingAllColors={false} />
-        <div className="Palette-colors">
+        <div className={classes.paletteColors}>
           {colorBoxes}
           <div className="go-back ColorBox">
             <Link to={`/palette/${id}`} className="back-button">
