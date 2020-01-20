@@ -46,7 +46,7 @@ export class Palette extends Component {
     ))
 
     return (
-      <div className="Palette">
+      <div className={classes.palette}>
         <Navbar
           level={level}
           changeLevel={this.changeLevel}
