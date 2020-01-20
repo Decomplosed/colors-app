@@ -73,8 +73,8 @@ export class SingleColorPalette extends Component {
         <Navbar handleChange={this.changeFormat} showingAllColors={false} />
         <div className={classes.paletteColors}>
           {colorBoxes}
-          <div className="go-back ColorBox">
-            <Link to={`/palette/${id}`} className="back-button">
+          <div className={classes.goBackBtn}>
+            <Link to={`/palette/${id}`}>
               Go Back
             </Link>
           </div>
