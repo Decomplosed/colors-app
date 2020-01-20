@@ -6,6 +6,8 @@ import { withStyles } from '@material-ui/styles'
 
 import './Palette.css'
 
+const styles = {}
+
 export class Palette extends Component {
   constructor(props) {
     super(props)
