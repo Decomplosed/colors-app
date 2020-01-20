@@ -1,3 +1,5 @@
+import chroma from 'chroma-js'
+
 export default {
   ColorBox: {
     height: props => (props.showingFullPalette ? '25%' : '50%'),
