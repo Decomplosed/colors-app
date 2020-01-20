@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import MiniPalette from './MiniPalette';
-import { withStyles } from '@material-ui/styles';
+import React, { Component } from 'react'
+import MiniPalette from './MiniPalette'
+import { withStyles } from '@material-ui/styles'
 
 const styles = {
   root: {
@@ -15,8 +15,7 @@ const styles = {
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
-    flexWrap: 'wrap',
-    border: '1px solid white'
+    flexWrap: 'wrap'
   },
   nav: {
     display: 'flex',
@@ -31,15 +30,15 @@ const styles = {
     gridTemplateColumns: 'repeat(3, 30%)',
     gridGap: '5%'
   }
-};
+}
 
 export class PaletteList extends Component {
   goToPalette(id) {
-    this.props.history.push(`/palette/${id}`);
+    this.props.history.push(`/palette/${id}`)
   }
 
   render() {
-    const { palettes, classes } = this.props;
+    const { palettes, classes } = this.props
     return (
       <div className={classes.root}>
         <div className={classes.container}>
@@ -56,8 +55,8 @@ export class PaletteList extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default withStyles(styles)(PaletteList);
+export default withStyles(styles)(PaletteList)
