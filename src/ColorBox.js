@@ -2,12 +2,11 @@ import React, { Component } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/styles'
+import styles from './styles/ColorBoxStyles'
 
 import './ColorBox.css'
 
-const styles = {}
-
-export class ColorBox extends Component {
+class ColorBox extends Component {
   constructor(props) {
     super(props)
     this.state = { copied: false }
