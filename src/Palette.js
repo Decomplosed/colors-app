@@ -6,7 +6,13 @@ import { withStyles } from '@material-ui/styles'
 
 import './Palette.css'
 
-const styles = {}
+const styles = {
+  palette: {
+    height: '100vh',
+    display: 'flex',
+    flexDirection: 'column'
+  }
+}
 
 export class Palette extends Component {
   constructor(props) {
