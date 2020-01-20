@@ -13,6 +13,20 @@ const styles = {
   },
   paletteColors: {
     height: '90%'
+  },
+  goBackBtn: {
+    height: '50%',
+    width: '20%',
+    margin: '0 auto',
+    display: 'inline-block',
+    position: 'relative',
+    cursor: 'pointer',
+    marginBottom: '-3.5px',
+    opacity: '1',
+    backgroundColor: 'black',
+    '& a': {
+      
+    }
   }
 }
 
