@@ -56,7 +56,7 @@ export class Palette extends Component {
           handleChange={this.changeFormat}
           showingAllColors
         />
-        <div className="Palette-colors">{colorBoxes}</div>
+        <div className={classes.paletteColors}>{colorBoxes}</div>
         <PaletteFooter paletteName={paletteName} emoji={emoji} />
       </div>
     )
