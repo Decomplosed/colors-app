@@ -90,9 +90,7 @@ export class SingleColorPalette extends Component {
         <div className={classes.paletteColors}>
           {colorBoxes}
           <div className={classes.goBackBtn}>
-            <Link to={`/palette/${id}`}>
-              Go Back
-            </Link>
+            <Link to={`/palette/${id}`}>Go Back</Link>
           </div>
         </div>
         <PaletteFooter paletteName={paletteName} emoji={emoji} />
