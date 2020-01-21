@@ -26,4 +26,4 @@ function PaletteFooter(props) {
   )
 }
 
-export default PaletteFooter
+export default withStyles(styles)(PaletteFooter)
