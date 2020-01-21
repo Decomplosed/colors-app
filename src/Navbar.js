@@ -84,7 +84,7 @@ export class Navbar extends Component {
           <Link to="/">reactcolorpicker</Link>
         </div>
         {showingAllColors && (
-          <div className="slider-container">
+          <div>
             <span>Level: {level}</span>
             <div className={classes.slider}>
               <Slider
