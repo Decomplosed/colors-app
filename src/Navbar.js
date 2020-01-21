@@ -9,7 +9,6 @@ import { withStyles } from '@material-ui/styles'
 
 import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css'
-import './Navbar.css'
 
 const styles = {
   Navbar: {
