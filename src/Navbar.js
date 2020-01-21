@@ -97,7 +97,7 @@ export class Navbar extends Component {
             </div>
           </div>
         )}
-        <div>
+        <div className={classes.selectContainer}>
           <Select value={format} onChange={this.handleFormatChange}>
             <MenuItem value="hex">HEX - #ffffff</MenuItem>
             <MenuItem value="rgb">RGB - rgb(255,255,255)</MenuItem>
