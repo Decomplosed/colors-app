@@ -51,6 +51,10 @@ const styles = {
     '& .rc-slider-track': {
       backgroundColor: 'transparent'
     }
+  },
+  selectContainer: {
+    marginLeft: 'auto',
+    marginRight: '1rem'
   }
 }
 
