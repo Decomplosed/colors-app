@@ -59,8 +59,8 @@ export class Navbar extends Component {
     const { level, changeLevel, showingAllColors, classes } = this.props
     const { format } = this.state
     return (
-      <header className="Navbar">
-        <div className="logo">
+      <header className={classes.Navbar}>
+        <div className={classes.logo}>
           <Link to="/">reactcolorpicker</Link>
         </div>
         {showingAllColors && (
