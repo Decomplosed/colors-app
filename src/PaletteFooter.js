@@ -17,11 +17,11 @@ const styles = {
 }
 
 function PaletteFooter(props) {
-  const { paletteName, emoji } = props
+  const { paletteName, emoji, classes } = props
   return (
-    <footer className="Palette-footer">
+    <footer className={classes.PaletteFooter}>
       {paletteName}
-      <span className="emoji">{emoji}</span>
+      <span className={classes.Emoji}>{emoji}</span>
     </footer>
   )
 }
