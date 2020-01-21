@@ -66,7 +66,7 @@ export class Navbar extends Component {
         {showingAllColors && (
           <div className="slider-container">
             <span>Level: {level}</span>
-            <div className="slider">
+            <div className={classes.slider}>
               <Slider
                 defaultValue={level}
                 min={100}
