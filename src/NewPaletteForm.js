@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import DraggableColorBox from './DraggableColorBox'
 import classNames from 'classnames'
 import { withStyles } from '@material-ui/core/styles'
 import Drawer from '@material-ui/core/Drawer'
@@ -170,11 +171,9 @@ class NewPaletteForm extends Component {
           })}
         >
           <div className={classes.drawerHeader} />
-          <ul>
-            {this.state.colors.map(color => (
-              <li style={{ backgroundColor: color }}>{color}</li>
-            ))}
-          </ul>
+          {this.state.colors.map(color => (
+            <DraggableColorBox color={color} />
+          ))}
         </main>
       </div>
     )
