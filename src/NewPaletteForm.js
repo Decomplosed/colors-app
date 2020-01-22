@@ -79,6 +79,7 @@ class NewPaletteForm extends Component {
       open: true,
       currentColor: 'teal'
     }
+    this.updateCurrentColor = this.updateCurrentColor.bind(this)
   }
 
   handleDrawerOpen = () => {
