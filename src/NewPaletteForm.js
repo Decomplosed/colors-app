@@ -133,6 +133,7 @@ class NewPaletteForm extends Component {
           })}
         >
           <div className={classes.drawerHeader} />
+          <ChromePicker />
         </main>
       </div>
     )
