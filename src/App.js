@@ -16,11 +16,7 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        <Route
-          exact
-          path="/palette/new"
-          render={() => <h1>New Palette Form</h1>}
-        />
+        <Route exact path="/palette/new" render={() => <NewPaletteForm />} />
         <Route
           exact
           path="/"
