@@ -172,7 +172,7 @@ class NewPaletteForm extends Component {
           <div className={classes.drawerHeader} />
           <ul>
             {this.state.colors.map(color => (
-              <li>{color}</li>
+              <li style={{ backgroundColor: color }}>{color}</li>
             ))}
           </ul>
         </main>
