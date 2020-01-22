@@ -140,6 +140,9 @@ class NewPaletteForm extends Component {
             color="purple"
             onChangeComplete={newColor => console.log(newColor)}
           />
+          <Button variant="contained" color="primary">
+            Add Color
+          </Button>
         </Drawer>
         <main
           className={classNames(classes.content, {
