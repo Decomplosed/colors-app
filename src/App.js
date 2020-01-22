@@ -17,14 +17,19 @@ class App extends Component {
       <Switch>
         <Route
           exact
-          path='/'
+          path="/palette/new"
+          render={() => <h1>New Palette Form</h1>}
+        />
+        <Route
+          exact
+          path="/"
           render={routeProps => (
             <PaletteList palettes={seedColors} {...routeProps} />
           )}
         />
         <Route
           exact
-          path='/palette/:id'
+          path="/palette/:id"
           render={routeProps => (
             <Palette
               palette={generatePalette(
@@ -35,7 +40,7 @@ class App extends Component {
         />
         <Route
           exact
-          path='/palette/:paletteId/:colorId'
+          path="/palette/:paletteId/:colorId"
           render={routeProps => (
             <SingleColorPalette
               colorId={routeProps.match.params.colorId}
