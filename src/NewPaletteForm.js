@@ -86,7 +86,7 @@ class NewPaletteForm extends Component {
   }
 
   render() {
-    const { classes, theme } = this.props
+    const { classes } = this.props
     const { open } = this.state
 
     return (
