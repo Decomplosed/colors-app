@@ -127,6 +127,10 @@ class NewPaletteForm extends Component {
             </IconButton>
           </div>
           <Divider />
+          <Typography variant="h4">Design Your Palette</Typography>
+          <Button variant="contained" color="secondary">
+            Clear Palette
+          </Button>
           <ChromePicker
             color="purple"
             onChangeComplete={newColor => console.log(newColor)}
