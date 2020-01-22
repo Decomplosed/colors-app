@@ -90,7 +90,9 @@ class NewPaletteForm extends Component {
     this.setState({ open: false })
   }
 
-  updateCurrentColor(newColor) {}
+  updateCurrentColor(newColor) {
+    this.setState({ currentColor: newColor.hex })
+  }
 
   render() {
     const { classes } = this.props
@@ -145,7 +147,7 @@ class NewPaletteForm extends Component {
           </div>
           <ChromePicker
             color={this.state.currentColor}
-            onChangeComplete={newColor => {}}
+            onChangeComplete={this.updateCurrentColor}
           />
           <Button
             variant="contained"
