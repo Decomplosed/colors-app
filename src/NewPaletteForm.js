@@ -81,6 +81,7 @@ class NewPaletteForm extends Component {
       colors: ['purple', '#312563']
     }
     this.updateCurrentColor = this.updateCurrentColor.bind(this)
+    this.addNewColor = this.addNewColor.bind(this)
   }
 
   handleDrawerOpen = () => {
@@ -158,6 +159,7 @@ class NewPaletteForm extends Component {
             variant="contained"
             color="primary"
             style={{ backgroundColor: this.state.currentColor }}
+            onClick={this.addNewColor}
           >
             Add Color
           </Button>
