@@ -126,6 +126,10 @@ class NewPaletteForm extends Component {
             </IconButton>
           </div>
           <Divider />
+          <ChromePicker
+            color="purple"
+            onChangeComplete={newColor => console.log(newColor)}
+          />
         </Drawer>
         <main
           className={classNames(classes.content, {
@@ -133,7 +137,6 @@ class NewPaletteForm extends Component {
           })}
         >
           <div className={classes.drawerHeader} />
-          <ChromePicker />
         </main>
       </div>
     )
