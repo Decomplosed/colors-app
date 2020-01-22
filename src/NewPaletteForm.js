@@ -131,6 +131,9 @@ class NewPaletteForm extends Component {
           <Button variant="contained" color="secondary">
             Clear Palette
           </Button>
+          <Button variant="contained" color="primary">
+            Random Color
+          </Button>
           <ChromePicker
             color="purple"
             onChangeComplete={newColor => console.log(newColor)}
