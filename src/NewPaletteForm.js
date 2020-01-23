@@ -186,7 +186,7 @@ class NewPaletteForm extends Component {
               validators={['isColorNameUnique', 'isColorUnique']}
               errorMessages={[
                 'Color name must be unique',
-                'Color must be unique'
+                'Color already used'
               ]}
             />
           </ValidatorForm>
