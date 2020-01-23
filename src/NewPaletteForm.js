@@ -254,7 +254,7 @@ class NewPaletteForm extends Component {
             <DraggableColorBox
               color={color.color}
               name={color.name}
-              handleClick={() => alert('CLICK')}
+              handleClick={() => this.removeColor(color.name)}
             />
           ))}
         </main>
