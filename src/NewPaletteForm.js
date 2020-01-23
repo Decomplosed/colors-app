@@ -168,11 +168,14 @@ class NewPaletteForm extends Component {
             <Typography variant="h6" color="inherit" noWrap>
               Persistent drawer
             </Typography>
-            <TextValidator
-              label="Palette Name"
-              value={this.state.newPaletteName}
-              onChange={this.handleChange}
-            />
+            <ValidatorForm>
+              <TextValidator
+                label="Palette Name"
+                name="newPaletteName"
+                value={this.state.newPaletteName}
+                onChange={this.handleChange}
+              />
+            </ValidatorForm>
             <Button
               variant="contained"
               color="primary"
@@ -213,6 +216,7 @@ class NewPaletteForm extends Component {
           <ValidatorForm onSubmit={this.addNewColor}>
             <TextValidator
               value={this.state.newColorName}
+              name="newColorName"
               onChange={this.handleChange}
               validators={['required', 'isColorNameUnique', 'isColorUnique']}
               errorMessages={[
