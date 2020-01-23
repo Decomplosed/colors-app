@@ -21,7 +21,9 @@ const styles = {
     color: '#000000',
     letterSpacing: '1px',
     textTransform: 'uppercase',
-    fontSize: '12px'
+    fontSize: '12px',
+    display: 'flex',
+    justifyContent: 'space-between'
   }
 }
 
