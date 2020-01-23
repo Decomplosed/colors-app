@@ -183,22 +183,22 @@ class NewPaletteForm extends Component {
             <TextValidator
               value={this.state.newName}
               onChange={this.handleChange}
-              validators={['isColorNameUnique', 'isColorUnique']}
+              validators={['required', 'isColorNameUnique', 'isColorUnique']}
               errorMessages={[
+                'Enter a color name',
                 'Color name must be unique',
                 'Color already used'
               ]}
             />
+            <Button
+              variant="contained"
+              type="submit"
+              color="primary"
+              style={{ backgroundColor: this.state.currentColor }}
+            >
+              Add Color
+            </Button>
           </ValidatorForm>
-          <Button
-            variant="contained"
-            type="submit"
-            color="primary"
-            style={{ backgroundColor: this.state.currentColor }}
-            onClick={this.addNewColor}
-          >
-            Add Color
-          </Button>
         </Drawer>
         <main
           className={classNames(classes.content, {
