@@ -130,7 +130,8 @@ class NewPaletteForm extends Component {
       paletteName: 'New Test Palette',
       colors: this.state.colors
     }
-    this.props.savePalette(this.state.colors)
+    this.props.savePalette(newPalette)
+    this.props.history.push('/')
   }
 
   render() {
@@ -162,7 +163,7 @@ class NewPaletteForm extends Component {
             <Button
               variant="contained"
               color="primary"
-              onClick={this.savePalette}
+              onClick={this.handleSubmit}
             >
               Save Palette
             </Button>
