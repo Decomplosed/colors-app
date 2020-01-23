@@ -168,18 +168,14 @@ class NewPaletteForm extends Component {
             <Typography variant="h6" color="inherit" noWrap>
               Persistent drawer
             </Typography>
-            <ValidatorForm>
+            <ValidatorForm onSubmit={this.handleSubmit}>
               <TextValidator
                 label="Palette Name"
                 name="newPaletteName"
                 value={this.state.newPaletteName}
                 onChange={this.handleChange}
               />
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={this.handleSubmit}
-              >
+              <Button variant="contained" color="primary" type="submit">
                 Save Palette
               </Button>
             </ValidatorForm>
