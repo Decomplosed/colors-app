@@ -11,16 +11,15 @@ import { generatePalette } from './colorHelpers'
 class App extends Component {
   constructor(props) {
     super(props)
+    this.state = { palettes: seedColors }
     this.savePalette = this.savePalette.bind(this)
   }
 
   findPalette(id) {
-    return seedColors.find(palette => palette.id === id)
+    return this.state.palettes.find(palette => palette.id === id)
   }
 
-  savePalette(newPalette) {
-    console.log(newPalette)
-  }
+  savePalette(newPalette) {}
 
   render() {
     return (
@@ -36,7 +35,7 @@ class App extends Component {
           exact
           path="/"
           render={routeProps => (
-            <PaletteList palettes={seedColors} {...routeProps} />
+            <PaletteList palettes={this.state.palettes} {...routeProps} />
           )}
         />
         <Route
