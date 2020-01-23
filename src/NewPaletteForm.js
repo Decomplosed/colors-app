@@ -132,6 +132,7 @@ class NewPaletteForm extends Component {
       <div className={classes.root}>
         <CssBaseline />
         <AppBar
+          color="default"
           position="fixed"
           className={classNames(classes.appBar, {
             [classes.appBarShift]: open
@@ -151,7 +152,7 @@ class NewPaletteForm extends Component {
             </Typography>
             <Button
               variant="contained"
-              color="secondary"
+              color="primary"
               onClick={this.savePalette}
             >
               Save Palette
