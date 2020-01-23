@@ -87,6 +87,7 @@ class NewPaletteForm extends Component {
     this.updateCurrentColor = this.updateCurrentColor.bind(this)
     this.addNewColor = this.addNewColor.bind(this)
     this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   componentDidMount() {
@@ -122,6 +123,14 @@ class NewPaletteForm extends Component {
 
   handleChange(evt) {
     this.setState({ newName: evt.target.value })
+  }
+
+  handleSubmit() {
+    const newPalette = {
+      paletteName: 'New Test Palette',
+      colors: this.state.colors
+    }
+    this.props.savePalette(this.state.colors)
   }
 
   render() {
