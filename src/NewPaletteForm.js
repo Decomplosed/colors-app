@@ -175,14 +175,14 @@ class NewPaletteForm extends Component {
                 value={this.state.newPaletteName}
                 onChange={this.handleChange}
               />
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={this.handleSubmit}
+              >
+                Save Palette
+              </Button>
             </ValidatorForm>
-            <Button
-              variant="contained"
-              color="primary"
-              onClick={this.handleSubmit}
-            >
-              Save Palette
-            </Button>
           </Toolbar>
         </AppBar>
         <Drawer
