@@ -183,9 +183,8 @@ class NewPaletteForm extends Component {
             <TextValidator
               value={this.state.newName}
               onChange={this.handleChange}
-              validators={['required', 'isColorNameUnique', 'isColorUnique']}
+              validators={['isColorNameUnique', 'isColorUnique']}
               errorMessages={[
-                'This field is required',
                 'Color name must be unique',
                 'Color must be unique'
               ]}
