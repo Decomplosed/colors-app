@@ -31,7 +31,7 @@ function DraggableColorBox(props) {
     <div className={classes.root} style={{ backgroundColor: props.color }}>
       <div className={classes.boxContent}>
         <span>{props.name}</span>
-        <span>X</span>
+        <DeleteIcon />
       </div>
     </div>
   )
