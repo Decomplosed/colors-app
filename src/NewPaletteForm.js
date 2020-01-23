@@ -81,9 +81,9 @@ class NewPaletteForm extends Component {
     this.state = {
       open: true,
       currentColor: 'teal',
-      newName: '',
-      colors: [{ color: 'blue', name: 'blue' }],
-      newPaletteName: ''
+      newColorName: '',
+      newPaletteName: '',
+      colors: [{ color: 'blue', name: 'blue' }]
     }
     this.updateCurrentColor = this.updateCurrentColor.bind(this)
     this.addNewColor = this.addNewColor.bind(this)
@@ -117,20 +117,25 @@ class NewPaletteForm extends Component {
   addNewColor() {
     const newColor = {
       color: this.state.currentColor,
-      name: this.state.newName
+      name: this.state.newColorName
     }
-    this.setState({ colors: [...this.state.colors, newColor], newName: '' })
+    this.setState({
+      colors: [...this.state.colors, newColor],
+      newColorName: ''
+    })
   }
 
   handleChange(evt) {
-    this.setState({ newName: evt.target.value })
+    this.setState({
+      [evt.target.name]: evt.target.value
+    })
   }
 
   handleSubmit() {
-    let newName = 'New Test Palette'
+    let newPaletteName = 'New Test Palette'
     const newPalette = {
-      paletteName: newName,
-      id: newName.toLowerCase().replace(' ', '-'),
+      paletteName: newPaletteName,
+      id: newPaletteName.toLowerCase().replace(' ', '-'),
       colors: this.state.colors
     }
     this.props.savePalette(newPalette)
@@ -163,7 +168,11 @@ class NewPaletteForm extends Component {
             <Typography variant="h6" color="inherit" noWrap>
               Persistent drawer
             </Typography>
-            <TextValidator value={this.state.newPaletteName} />
+            <TextValidator
+              label="Palette Name"
+              value={this.state.newPaletteName}
+              onChange={this.handleChange}
+            />
             <Button
               variant="contained"
               color="primary"
@@ -203,7 +212,7 @@ class NewPaletteForm extends Component {
           />
           <ValidatorForm onSubmit={this.addNewColor}>
             <TextValidator
-              value={this.state.newName}
+              value={this.state.newColorName}
               onChange={this.handleChange}
               validators={['required', 'isColorNameUnique', 'isColorUnique']}
               errorMessages={[
