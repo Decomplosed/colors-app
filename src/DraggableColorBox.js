@@ -10,7 +10,11 @@ const styles = {
     display: 'inline-block',
     position: 'relative',
     cursor: 'pointer',
-    marginBottom: '-3.5px'
+    marginBottom: '-3.5px',
+    '&:hover svg': {
+      color: 'white',
+      transform: 'scale(1.5)'
+    }
   },
   boxContent: {
     position: 'absolute',
@@ -24,6 +28,10 @@ const styles = {
     fontSize: '12px',
     display: 'flex',
     justifyContent: 'space-between'
+  },
+  deleteIcon: {
+    color: 'rgba(0, 0, 0, 0.5)',
+    transition: 'all 0.3s ease-in-out'
   }
 }
 
