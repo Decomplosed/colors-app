@@ -231,7 +231,11 @@ class NewPaletteForm extends Component {
             >
               Clear Palette
             </Button>
-            <Button variant="contained" color="primary">
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={this.addRandomColor}
+            >
               Random Color
             </Button>
           </div>
