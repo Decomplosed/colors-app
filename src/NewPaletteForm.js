@@ -156,6 +156,12 @@ class NewPaletteForm extends Component {
     })
   }
 
+  onSortEnd = ({ oldIndex, newIndex }) => {
+    this.setState(({ items }) => ({
+      items: arrayMove(items, oldIndex, newIndex)
+    }))
+  }
+
   render() {
     const { classes } = this.props
     const { open } = this.state
