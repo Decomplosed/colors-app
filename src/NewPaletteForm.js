@@ -156,8 +156,8 @@ class NewPaletteForm extends Component {
   }
 
   onSortEnd = ({ oldIndex, newIndex }) => {
-    this.setState(({ items }) => ({
-      items: arrayMove(items, oldIndex, newIndex)
+    this.setState(({ colors }) => ({
+      colors: arrayMove(colors, oldIndex, newIndex)
     }))
   }
 
