@@ -248,6 +248,7 @@ class NewPaletteForm extends Component {
               variant="contained"
               color="primary"
               onClick={this.addRandomColor}
+              disabled={paletteIsFull}
             >
               Random Color
             </Button>
