@@ -77,6 +77,9 @@ const styles = theme => ({
 })
 
 class NewPaletteForm extends Component {
+  static defaultProps = {
+    maxColors: 20
+  }
   constructor(props) {
     super(props)
     this.state = {
