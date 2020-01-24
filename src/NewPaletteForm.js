@@ -90,6 +90,7 @@ class NewPaletteForm extends Component {
     this.addNewColor = this.addNewColor.bind(this)
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.removeColor = this.removeColor.bind(this)
   }
 
   componentDidMount() {
