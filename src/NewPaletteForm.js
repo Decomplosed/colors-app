@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import DraggableColorBox from './DraggableColorBox'
+import DraggableColorList from './DraggableColorList'
 import classNames from 'classnames'
 import { withStyles } from '@material-ui/core/styles'
 import Drawer from '@material-ui/core/Drawer'
