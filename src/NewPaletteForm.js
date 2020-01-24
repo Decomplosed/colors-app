@@ -262,6 +262,7 @@ class NewPaletteForm extends Component {
             colors={this.state.colors}
             removeColor={this.removeColor}
             axis="xy"
+            onSortEnd={this.onSortEnd}
           />
         </main>
       </div>
