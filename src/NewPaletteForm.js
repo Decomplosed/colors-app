@@ -251,7 +251,10 @@ class NewPaletteForm extends Component {
           })}
         >
           <div className={classes.drawerHeader} />
-          
+          <DraggableColorList
+            colors={this.state.colors}
+            removeColor={this.removeColor}
+          />
         </main>
       </div>
     )
