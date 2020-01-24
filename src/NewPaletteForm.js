@@ -179,8 +179,8 @@ class NewPaletteForm extends Component {
   }
 
   render() {
-    const { classes } = this.props
-    const { open } = this.state
+    const { classes, maxColors } = this.props
+    const { open, colors } = this.state
 
     return (
       <div className={classes.root}>
