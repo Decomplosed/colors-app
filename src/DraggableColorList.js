@@ -2,15 +2,15 @@ import React from 'react'
 import DraggableColorBox from './DraggableColorBox'
 import { SortableContainer } from 'react-sortable-hoc'
 
-function DraggableColorList() {
+function DraggableColorList({ colors, removeColor }) {
   return (
     <div>
-      {this.state.colors.map(color => (
+      {colors.map(color => (
         <DraggableColorBox
           key={color.name}
           color={color.color}
           name={color.name}
-          handleClick={() => this.removeColor(color.name)}
+          handleClick={() => removeColor(color.name)}
         />
       ))}
     </div>
