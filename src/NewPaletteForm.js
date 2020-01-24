@@ -14,7 +14,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import Button from '@material-ui/core/Button'
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
 import { ChromePicker } from 'react-color'
-import arrayMove from 'array-move'
+import { arrayMove } from 'react-sortable-hoc'
 
 const drawerWidth = 400
 
