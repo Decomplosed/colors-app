@@ -271,6 +271,7 @@ class NewPaletteForm extends Component {
               variant="contained"
               type="submit"
               color="primary"
+              disabled={colors.length >= maxColors}
               style={{ backgroundColor: this.state.currentColor }}
             >
               Add Color
