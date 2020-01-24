@@ -84,7 +84,7 @@ class NewPaletteForm extends Component {
       currentColor: 'teal',
       newColorName: '',
       newPaletteName: '',
-      colors: [{ color: 'blue', name: 'blue' }]
+      colors: this.props.palettes[0].colors
     }
     this.updateCurrentColor = this.updateCurrentColor.bind(this)
     this.addNewColor = this.addNewColor.bind(this)
