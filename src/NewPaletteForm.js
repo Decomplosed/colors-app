@@ -161,6 +161,14 @@ class NewPaletteForm extends Component {
     this.setState({ colors: [] })
   }
 
+  addRandomColor() {
+    const allColors = this.props.palettes.map(p => p.colors).flat()
+    let rand = Math.floor(Math.random() * allColors.length)
+    const randomColor = allColors[rand]
+
+    this.setState({ colors: [...this.state.colors, randomColor] })
+  }
+
   onSortEnd = ({ oldIndex, newIndex }) => {
     this.setState(({ colors }) => ({
       colors: arrayMove(colors, oldIndex, newIndex)
