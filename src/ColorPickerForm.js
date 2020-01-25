@@ -54,15 +54,16 @@ class ColorPickerForm extends Component {
 
   render() {
     const { paletteIsFull } = this.props
+    const { currentColor, newColorName } = this.state
     return (
       <div>
         <ChromePicker
-          color={this.state.currentColor}
+          color={currentColor}
           onChangeComplete={this.updateCurrentColor}
         />
         <ValidatorForm onSubmit={this.handleSubmit}>
           <TextValidator
-            value={this.state.newColorName}
+            value={newColorName}
             name="newColorName"
             onChange={this.handleChange}
             validators={['required', 'isColorNameUnique', 'isColorUnique']}
@@ -78,7 +79,7 @@ class ColorPickerForm extends Component {
             color="primary"
             disabled={paletteIsFull}
             style={{
-              backgroundColor: paletteIsFull ? 'grey' : this.state.currentColor
+              backgroundColor: paletteIsFull ? 'grey' : currentColor
             }}
           >
             {paletteIsFull ? 'PaletteFull' : 'Add Color'}
