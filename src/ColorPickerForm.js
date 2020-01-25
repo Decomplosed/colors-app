@@ -19,6 +19,7 @@ class ColorPickerForm extends Component {
     this.state = { currentColor: 'teal', newColorName: '' }
     this.updateCurrentColor = this.updateCurrentColor.bind(this)
     this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.binf(this)
   }
 
   updateCurrentColor(newColor) {
@@ -29,6 +30,15 @@ class ColorPickerForm extends Component {
     this.setState({
       [evt.target.name]: evt.target.value
     })
+  }
+
+  handleSubmit() {
+    const newColor = {
+      color: this.state.currentColor,
+      name: this.state.newColorName
+    }
+
+    this.props.addNewColor(newColor)
   }
 
   render() {
