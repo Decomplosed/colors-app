@@ -215,36 +215,6 @@ class NewPaletteForm extends Component {
               Random Color
             </Button>
           </div>
-          <ChromePicker
-            color={this.state.currentColor}
-            onChangeComplete={this.updateCurrentColor}
-          />
-          <ValidatorForm onSubmit={this.addNewColor}>
-            <TextValidator
-              value={this.state.newColorName}
-              name="newColorName"
-              onChange={this.handleChange}
-              validators={['required', 'isColorNameUnique', 'isColorUnique']}
-              errorMessages={[
-                'Enter a color name',
-                'Color name must be unique',
-                'Color already used'
-              ]}
-            />
-            <Button
-              variant="contained"
-              type="submit"
-              color="primary"
-              disabled={paletteIsFull}
-              style={{
-                backgroundColor: paletteIsFull
-                  ? 'grey'
-                  : this.state.currentColor
-              }}
-            >
-              {paletteIsFull ? 'PaletteFull' : 'Add Color'}
-            </Button>
-          </ValidatorForm>
         </Drawer>
         <main
           className={classNames(classes.content, {
