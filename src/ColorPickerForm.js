@@ -16,8 +16,14 @@ import { arrayMove } from 'react-sortable-hoc'
 class ColorPickerForm extends Component {
   constructor(props) {
     super(props)
-    this.state={currentColor: 'teal'}
+    this.state = { currentColor: 'teal' }
+    this.updateCurrentColor = this.updateCurrentColor.bind(this)
   }
+
+  updateCurrentColor(newColor) {
+    this.setState({ currentColor: newColor.hex })
+  }
+
   render() {
     const { paletteIsFull } = this.props
     return (
