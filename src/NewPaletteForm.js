@@ -185,6 +185,7 @@ class NewPaletteForm extends Component {
           classes={classes}
           palettes={palettes}
           handleSubmit={this.handleSubmit}
+          handleDrawerOpen={this.handleDrawerOpen}
         />
         <Drawer
           className={classes.drawer}
