@@ -23,6 +23,7 @@ class PaletteFormNav extends Component {
     this.state = {
       newPaletteName: ''
     }
+    this.handleChange = this.handleChange.bind(this)
   }
 
   componentDidMount() {
@@ -31,6 +32,12 @@ class PaletteFormNav extends Component {
         ({ paletteName }) => paletteName.toLowerCase() !== value.toLowerCase()
       )
     )
+  }
+
+  handleChange(evt) {
+    this.setState({
+      [evt.target.name]: evt.target.value
+    })
   }
 
   render() {
