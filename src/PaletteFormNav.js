@@ -20,6 +20,9 @@ import { arrayMove } from 'react-sortable-hoc'
 class PaletteFormNav extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+      newPaletteName: ''
+    }
   }
 
   render() {
