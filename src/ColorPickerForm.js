@@ -14,6 +14,10 @@ import { ChromePicker } from 'react-color'
 import { arrayMove } from 'react-sortable-hoc'
 
 class ColorPickerForm extends Component {
+  constructor(props) {
+    super(props)
+    this.state={currentColor: 'teal'}
+  }
   render() {
     const { paletteIsFull } = this.props
     return (
