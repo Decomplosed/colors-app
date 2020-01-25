@@ -218,6 +218,11 @@ class NewPaletteForm extends Component {
               <Button variant="contained" color="primary" type="submit">
                 Save Palette
               </Button>
+              <Link to="/">
+                <Button variant="contained" color="secondary">
+                  Go Back
+                </Button>
+              </Link>
             </ValidatorForm>
           </Toolbar>
         </AppBar>
