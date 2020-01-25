@@ -187,6 +187,7 @@ class NewPaletteForm extends Component {
 
     return (
       <div className={classes.root}>
+        <PaletteFormNav />
         <Drawer
           className={classes.drawer}
           variant="persistent"
