@@ -21,8 +21,9 @@ class PaletteFormNav extends Component {
   constructor(props) {
     super(props)
   }
-  
+
   render() {
+    const { classes, open } = this.props
     return (
       <div>
         <CssBaseline />
