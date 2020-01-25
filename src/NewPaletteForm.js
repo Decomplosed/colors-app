@@ -139,11 +139,10 @@ class NewPaletteForm extends Component {
     })
   }
 
-  handleSubmit() {
-    let newName = this.state.newPaletteName
+  handleSubmit(newPaletteName) {
     const newPalette = {
-      paletteName: newName,
-      id: newName.toLowerCase().replace(/ /g, '-'),
+      paletteName: newPaletteName,
+      id: newPaletteName.toLowerCase().replace(/ /g, '-'),
       colors: this.state.colors
     }
     this.props.savePalette(newPalette)
@@ -181,7 +180,12 @@ class NewPaletteForm extends Component {
 
     return (
       <div className={classes.root}>
-        <PaletteFormNav open={open} classes={classes} palettes={palettes} />
+        <PaletteFormNav
+          open={open}
+          classes={classes}
+          palettes={palettes}
+          handleSubmit={this.handleSubmit}
+        />
         <Drawer
           className={classes.drawer}
           variant="persistent"
