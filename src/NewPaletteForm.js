@@ -208,6 +208,7 @@ class NewPaletteForm extends Component {
           <ColorPickerForm
             paletteIsFull={paletteIsFull}
             addNewColor={this.addNewColor}
+            colors={colors}
           />
         </Drawer>
         <main
