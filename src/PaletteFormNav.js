@@ -65,7 +65,9 @@ class PaletteFormNav extends Component {
             <Typography variant="h6" color="inherit" noWrap>
               Persistent drawer
             </Typography>
-            <ValidatorForm onSubmit={() => this.props.handleSubmit()}>
+            <ValidatorForm
+              onSubmit={() => this.props.handleSubmit(newPaletteName)}
+            >
               <TextValidator
                 label="Palette Name"
                 name="newPaletteName"
