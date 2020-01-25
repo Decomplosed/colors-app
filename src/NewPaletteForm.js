@@ -82,7 +82,6 @@ class NewPaletteForm extends Component {
     super(props)
     this.state = {
       open: true,
-      newColorName: '',
       colors: this.props.palettes[0].colors
     }
     this.addNewColor = this.addNewColor.bind(this)
@@ -112,11 +111,7 @@ class NewPaletteForm extends Component {
     this.setState({ open: false })
   }
 
-  addNewColor() {
-    const newColor = {
-      color: this.state.currentColor,
-      name: this.state.newColorName
-    }
+  addNewColor(newColor) {
     this.setState({
       colors: [...this.state.colors, newColor],
       newColorName: ''
@@ -210,7 +205,10 @@ class NewPaletteForm extends Component {
               Random Color
             </Button>
           </div>
-          <ColorPickerForm paletteIsFull={paletteIsFull} />
+          <ColorPickerForm
+            paletteIsFull={paletteIsFull}
+            addNewColor={this.addNewColor}
+          />
         </Drawer>
         <main
           className={classNames(classes.content, {
