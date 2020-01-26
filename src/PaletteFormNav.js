@@ -97,12 +97,12 @@ class PaletteFormNav extends Component {
                 <Button variant="contained" color="primary" type="submit">
                   Save Palette
                 </Button>
-                <Link to="/">
-                  <Button variant="contained" color="secondary">
-                    Go Back
-                  </Button>
-                </Link>
               </ValidatorForm>
+              <Link to="/">
+                <Button variant="contained" color="secondary">
+                  Go Back
+                </Button>
+              </Link>
             </div>
           </Toolbar>
         </AppBar>
