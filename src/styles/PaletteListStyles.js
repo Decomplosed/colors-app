@@ -2,7 +2,9 @@ export default {
   root: {
     display: 'flex',
     alignItems: 'flex-start',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    background: 'blue',
+    height: '100vh'
   },
   container: {
     width: '50%',
