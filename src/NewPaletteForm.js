@@ -64,6 +64,9 @@ const styles = theme => ({
   },
   buttons: {
     width: '100%'
+  },
+  button: {
+    width: '50%'
   }
 })
 
