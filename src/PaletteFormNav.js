@@ -82,26 +82,28 @@ class PaletteFormNav extends Component {
             <Typography variant="h6" color="inherit" noWrap>
               Create a Palette
             </Typography>
-            <ValidatorForm
-              onSubmit={() => this.props.handleSubmit(newPaletteName)}
-            >
-              <TextValidator
-                label="Palette Name"
-                name="newPaletteName"
-                value={this.state.newPaletteName}
-                onChange={this.handleChange}
-                validators={['required', 'isPaletteNameUnique']}
-                errorMessages={['Enter a Palette Name', 'Name already used']}
-              />
-              <Button variant="contained" color="primary" type="submit">
-                Save Palette
-              </Button>
-              <Link to="/">
-                <Button variant="contained" color="secondary">
-                  Go Back
+            <div>
+              <ValidatorForm
+                onSubmit={() => this.props.handleSubmit(newPaletteName)}
+              >
+                <TextValidator
+                  label="Palette Name"
+                  name="newPaletteName"
+                  value={this.state.newPaletteName}
+                  onChange={this.handleChange}
+                  validators={['required', 'isPaletteNameUnique']}
+                  errorMessages={['Enter a Palette Name', 'Name already used']}
+                />
+                <Button variant="contained" color="primary" type="submit">
+                  Save Palette
                 </Button>
-              </Link>
-            </ValidatorForm>
+                <Link to="/">
+                  <Button variant="contained" color="secondary">
+                    Go Back
+                  </Button>
+                </Link>
+              </ValidatorForm>
+            </div>
           </Toolbar>
         </AppBar>
       </div>
