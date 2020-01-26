@@ -11,7 +11,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import Button from '@material-ui/core/Button'
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
 
-const styles = {
+const styles = theme => ({
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -30,7 +30,7 @@ const styles = {
     marginLeft: 12,
     marginRight: 20
   }
-}
+})
 
 class PaletteFormNav extends Component {
   constructor(props) {
