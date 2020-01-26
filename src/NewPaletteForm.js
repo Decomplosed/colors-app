@@ -26,7 +26,9 @@ const styles = theme => ({
     flexShrink: 0
   },
   drawerPaper: {
-    width: drawerWidth
+    width: drawerWidth,
+    display: 'flex',
+    alignItems: 'center'
   },
   drawerHeader: {
     display: 'flex',
