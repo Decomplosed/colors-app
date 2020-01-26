@@ -70,6 +70,7 @@ class ColorPickerForm extends Component {
         <ValidatorForm onSubmit={this.handleSubmit}>
           <TextValidator
             value={newColorName}
+            className={classes.colorInput}
             name="newColorName"
             onChange={this.handleChange}
             validators={['required', 'isColorNameUnique', 'isColorUnique']}
