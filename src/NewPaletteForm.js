@@ -61,6 +61,9 @@ const styles = theme => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center'
+  },
+  buttons: {
+    width: '100%'
   }
 })
 
