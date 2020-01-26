@@ -82,4 +82,4 @@ class ColorPickerForm extends Component {
   }
 }
 
-export default ColorPickerForm
+export default withStyles(styles)(ColorPickerForm)
