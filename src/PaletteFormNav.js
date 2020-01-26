@@ -82,7 +82,7 @@ class PaletteFormNav extends Component {
             <Typography variant="h6" color="inherit" noWrap>
               Create a Palette
             </Typography>
-            <div>
+            <div className={classes.navBtns}>
               <ValidatorForm
                 onSubmit={() => this.props.handleSubmit(newPaletteName)}
               >
