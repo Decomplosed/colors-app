@@ -80,7 +80,7 @@ class PaletteFormNav extends Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
-              Persistent drawer
+              Create a Palette
             </Typography>
             <ValidatorForm
               onSubmit={() => this.props.handleSubmit(newPaletteName)}
