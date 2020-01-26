@@ -14,6 +14,9 @@ import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
 const drawerWidth = 400
 
 const styles = theme => ({
+  root: {
+    display: 'flex'
+  },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
