@@ -49,6 +49,7 @@ class PaletteFormNav extends Component {
       formShowing: false
     }
     this.handleChange = this.handleChange.bind(this)
+    this.showForm = this.showForm.bind(this)
   }
 
   handleChange(evt) {
