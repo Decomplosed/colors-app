@@ -71,6 +71,7 @@ class PaletteMetaForm extends Component {
               <TextValidator
                 label="Palette Name"
                 name="newPaletteName"
+                fullWidth
                 value={newPaletteName}
                 onChange={this.handleChange}
                 validators={['required', 'isPaletteNameUnique']}
