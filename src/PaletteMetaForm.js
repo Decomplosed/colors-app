@@ -68,7 +68,7 @@ class PaletteMetaForm extends Component {
               <TextValidator
                 label="Palette Name"
                 name="newPaletteName"
-                value={this.state.newPaletteName}
+                value={newPaletteName}
                 onChange={this.handleChange}
                 validators={['required', 'isPaletteNameUnique']}
                 errorMessages={['Enter a Palette Name', 'Name already used']}
