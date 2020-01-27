@@ -43,7 +43,10 @@ const styles = theme => ({
     marginRight: '1rem'
   },
   button: {
-    margin: '0.5rem'
+    margin: '0.5rem',
+    '& a': {
+      textDecoration: 'none'
+    }
   }
 })
 
