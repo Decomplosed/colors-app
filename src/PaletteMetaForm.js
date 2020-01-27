@@ -44,13 +44,6 @@ class PaletteMetaForm extends Component {
     const { newPaletteName } = this.state
     return (
       <div>
-        <Button
-          variant="outlined"
-          color="primary"
-          onClick={this.handleClickOpen}
-        >
-          Open form dialog
-        </Button>
         <Dialog
           open={this.state.open}
           onClose={this.handleClose}

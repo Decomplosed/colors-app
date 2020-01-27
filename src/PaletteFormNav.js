@@ -88,6 +88,13 @@ class PaletteFormNav extends Component {
                 Go Back
               </Button>
             </Link>
+            <Button
+              variant="outlined"
+              color="primary"
+              onClick={this.handleClickOpen}
+            >
+              Open form dialog
+            </Button>
           </div>
         </AppBar>
       </div>
