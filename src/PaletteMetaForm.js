@@ -9,12 +9,11 @@ import DialogTitle from '@material-ui/core/DialogTitle'
 import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
 
 class PaletteMetaForm extends Component {
-  state = {
-    open: false
-  }
-
   constructor(props) {
     super(props)
+    this.state = {
+      open: false
+    }
   }
 
   componentDidMount() {
