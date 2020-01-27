@@ -56,14 +56,16 @@ class PaletteMetaForm extends Component {
           onClose={this.handleClose}
           aria-labelledby="form-dialog-title"
         >
-          <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+          <DialogTitle id="form-dialog-title">
+            Choose a Palette Name
+          </DialogTitle>
           <ValidatorForm
             onSubmit={() => this.props.handleSubmit(newPaletteName)}
           >
             <DialogContent>
               <DialogContentText>
-                To subscribe to this website, please enter your email address
-                here. We will send updates occasionally.
+                Please enter a name for your new beautiful palette. Make sure
+                it's unique!
               </DialogContentText>
 
               <TextValidator
