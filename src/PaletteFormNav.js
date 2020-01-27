@@ -38,6 +38,12 @@ const styles = theme => ({
   menuButton: {
     marginLeft: 12,
     marginRight: 20
+  },
+  navBtns: {
+    marginRight: '1rem'
+  },
+  button: {
+    margin: '0.5rem'
   }
 })
 
@@ -89,11 +95,16 @@ class PaletteFormNav extends Component {
           </Toolbar>
           <div className={classes.navBtns}>
             <Link to="/">
-              <Button variant="contained" color="secondary">
+              <Button className="button" variant="contained" color="secondary">
                 Go Back
               </Button>
             </Link>
-            <Button variant="contained" color="primary" onClick={this.showForm}>
+            <Button
+              className="button"
+              variant="contained"
+              color="primary"
+              onClick={this.showForm}
+            >
               Save
             </Button>
           </div>
