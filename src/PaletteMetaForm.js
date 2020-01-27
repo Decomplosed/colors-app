@@ -72,6 +72,7 @@ class PaletteMetaForm extends Component {
                 label="Palette Name"
                 name="newPaletteName"
                 fullWidth
+                margin="normal"
                 value={newPaletteName}
                 onChange={this.handleChange}
                 validators={['required', 'isPaletteNameUnique']}
