@@ -57,6 +57,10 @@ class PaletteFormNav extends Component {
     })
   }
 
+  showForm() {
+    this.setState({ formShowing: true })
+  }
+
   render() {
     const { classes, open, palettes, handleSubmit } = this.props
     return (
