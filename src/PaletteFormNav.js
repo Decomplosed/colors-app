@@ -95,12 +95,16 @@ class PaletteFormNav extends Component {
           </Toolbar>
           <div className={classes.navBtns}>
             <Link to="/">
-              <Button className="button" variant="contained" color="secondary">
+              <Button
+                className={classes.button}
+                variant="contained"
+                color="secondary"
+              >
                 Go Back
               </Button>
             </Link>
             <Button
-              className="button"
+              className={classes.button}
               variant="contained"
               color="primary"
               onClick={this.showForm}
