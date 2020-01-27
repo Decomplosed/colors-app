@@ -13,6 +13,10 @@ class PaletteMetaForm extends Component {
     open: false
   }
 
+  constructor(props) {
+    super(props)
+  }
+
   componentDidMount() {
     ValidatorForm.addValidationRule('isPaletteNameUnique', value =>
       this.props.palettes.every(
