@@ -97,7 +97,7 @@ class PaletteFormNav extends Component {
             </Typography>
           </Toolbar>
           <div className={classes.navBtns}>
-            <Link to="/">
+            <Link to="/" clasName={classes.link}>
               <Button
                 className={classes.button}
                 variant="contained"
