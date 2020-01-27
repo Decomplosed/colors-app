@@ -41,6 +41,7 @@ class PaletteMetaForm extends Component {
   }
 
   render() {
+    const { newPaletteName } = this.state
     return (
       <div>
         <Button
