@@ -14,6 +14,7 @@ class PaletteMetaForm extends Component {
     this.state = {
       open: false
     }
+    this.handleChange = this.handleChange.bind(this)
   }
 
   componentDidMount() {
@@ -22,6 +23,12 @@ class PaletteMetaForm extends Component {
         ({ paletteName }) => paletteName.toLowerCase() !== value.toLowerCase()
       )
     )
+  }
+
+  handleChange(evt) {
+    this.setState({
+      [evt.target.name]: evt.target.value
+    })
   }
 
   handleClickOpen = () => {
