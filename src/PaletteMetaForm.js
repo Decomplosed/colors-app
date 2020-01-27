@@ -41,14 +41,21 @@ class PaletteMetaForm extends Component {
               To subscribe to this website, please enter your email address
               here. We will send updates occasionally.
             </DialogContentText>
-            <TextField
-              autoFocus
-              margin="dense"
-              id="name"
-              label="Email Address"
-              type="email"
-              fullWidth
-            />
+            <ValidatorForm
+              onSubmit={() => this.props.handleSubmit(newPaletteName)}
+            >
+              <TextValidator
+                label="Palette Name"
+                name="newPaletteName"
+                value={this.state.newPaletteName}
+                onChange={this.handleChange}
+                validators={['required', 'isPaletteNameUnique']}
+                errorMessages={['Enter a Palette Name', 'Name already used']}
+              />
+              <Button variant="contained" color="primary" type="submit">
+                Save Palette
+              </Button>
+            </ValidatorForm>
           </DialogContent>
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">
