@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import PaletteMetaForm from './PaletteMetaForm'
 import { withStyles } from '@material-ui/core/styles'
 import classNames from 'classnames'
 import CssBaseline from '@material-ui/core/CssBaseline'
