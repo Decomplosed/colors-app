@@ -6,10 +6,19 @@ import DialogActions from '@material-ui/core/DialogActions'
 import DialogContent from '@material-ui/core/DialogContent'
 import DialogContentText from '@material-ui/core/DialogContentText'
 import DialogTitle from '@material-ui/core/DialogTitle'
+import { ValidatorForm, TextValidator } from 'react-material-ui-form-validator'
 
 class PaletteMetaForm extends Component {
   state = {
     open: false
+  }
+
+  componentDidMount() {
+    ValidatorForm.addValidationRule('isPaletteNameUnique', value =>
+      this.props.palettes.every(
+        ({ paletteName }) => paletteName.toLowerCase() !== value.toLowerCase()
+      )
+    )
   }
 
   handleClickOpen = () => {
