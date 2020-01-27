@@ -45,7 +45,8 @@ class PaletteFormNav extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      newPaletteName: ''
+      newPaletteName: '',
+      formShowing: false
     }
     this.handleChange = this.handleChange.bind(this)
   }
