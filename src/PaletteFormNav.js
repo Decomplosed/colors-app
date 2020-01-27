@@ -96,7 +96,9 @@ class PaletteFormNav extends Component {
             </Button>
           </div>
         </AppBar>
-        <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit} />
+        {this.state.formShowing && (
+          <PaletteMetaForm palettes={palettes} handleSubmit={handleSubmit} />
+        )}
       </div>
     )
   }
