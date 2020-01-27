@@ -12,7 +12,8 @@ class PaletteMetaForm extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      open: false
+      open: false,
+      newPaletteName: ''
     }
     this.handleChange = this.handleChange.bind(this)
   }
