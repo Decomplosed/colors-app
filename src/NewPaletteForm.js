@@ -110,7 +110,7 @@ class NewPaletteForm extends Component {
   }
 
   handleSubmit(newPalette) {
-    newPalette.id = newPalette.toLowerCase().replace(/ /g, '-')
+    newPalette.id = newPalette.paletteName.toLowerCase().replace(/ /g, '-')
     newPalette.colors = this.state.colors
     this.props.savePalette(newPalette)
     this.props.history.push('/')
