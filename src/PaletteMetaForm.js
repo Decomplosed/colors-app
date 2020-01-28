@@ -18,6 +18,7 @@ class PaletteMetaForm extends Component {
     }
     this.handleChange = this.handleChange.bind(this)
     this.showEmojiPicker = this.showEmojiPicker.bind(this)
+    this.savePalette = this.savePalette.bind(this)
   }
 
   componentDidMount() {
