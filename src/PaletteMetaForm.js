@@ -41,7 +41,7 @@ class PaletteMetaForm extends Component {
 
   render() {
     const { newPaletteName } = this.state
-    const { hideForm } = this.props
+    const { hideForm, handleSubmit } = this.props
     return (
       <div>
         <Dialog
@@ -52,9 +52,7 @@ class PaletteMetaForm extends Component {
           <DialogTitle id="form-dialog-title">
             Choose a Palette Name
           </DialogTitle>
-          <ValidatorForm
-            onSubmit={() => this.props.handleSubmit(newPaletteName)}
-          >
+          <ValidatorForm onSubmit={() => handleSubmit(newPaletteName)}>
             <DialogContent>
               <DialogContentText>
                 Please enter a name for your new beautiful palette. Make sure
