@@ -33,6 +33,10 @@ class PaletteMetaForm extends Component {
     })
   }
 
+  showEmojiPicker() {
+    this.setState({ stage: 'emoji' })
+  }
+
   handleClickOpen = () => {
     this.setState({ open: true })
   }
