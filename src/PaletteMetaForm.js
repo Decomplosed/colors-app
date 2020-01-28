@@ -46,6 +46,9 @@ class PaletteMetaForm extends Component {
     const { hideForm, handleSubmit } = this.props
     return (
       <div>
+        <Dialog open={}>
+          <Picker />
+        </Dialog>
         <Dialog
           open={this.state.open}
           onClose={hideForm}
@@ -60,7 +63,6 @@ class PaletteMetaForm extends Component {
                 Please enter a name for your new beautiful palette. Make sure
                 it's unique!
               </DialogContentText>
-              <Picker />
 
               <TextValidator
                 label="Palette Name"
