@@ -38,6 +38,10 @@ class PaletteMetaForm extends Component {
     this.setState({ stage: 'emoji' })
   }
 
+  savePalette(mystery) {
+    console.log(mystery)
+  }
+
   handleClickOpen = () => {
     this.setState({ open: true })
   }
