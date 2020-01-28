@@ -13,7 +13,7 @@ class PaletteMetaForm extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      open: true,
+      stage: 'form',
       newPaletteName: ''
     }
     this.handleChange = this.handleChange.bind(this)
