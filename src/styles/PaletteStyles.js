@@ -38,6 +38,10 @@ export default {
       textDecoration: 'none',
       border: 'none'
     },
+    [sizes.down('lg')]: {
+      width: '25%',
+      height: '33.333%'
+    },
     [sizes.down('md')]: {
       width: '50%',
       height: '20%'
