@@ -60,7 +60,7 @@ class PaletteFormNav extends Component {
                 [classes.hide]: open
               })}
             >
-              <MenuIcon />
+              <ChevronRightIcon />
             </IconButton>
             <Typography variant="h6" color="inherit" noWrap>
               Create a Palette
