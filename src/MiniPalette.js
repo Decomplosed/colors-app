@@ -25,7 +25,7 @@ class MiniPalette extends Component {
     ))
 
     return (
-      <div className={classes.root} onClick={props.handleClick}>
+      <div className={classes.root} onClick={handleClick}>
         <DeleteIcon
           className={classes.deleteIcon}
           onClick={this.deletePalette}
