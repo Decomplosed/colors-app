@@ -24,6 +24,7 @@ export class PaletteList extends Component {
                 {...palette}
                 handleClick={() => this.goToPalette(palette.id)}
                 key={palette.id}
+                handleDelete={deletePalette}
               />
             ))}
           </div>
