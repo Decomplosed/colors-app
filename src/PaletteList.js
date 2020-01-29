@@ -10,7 +10,7 @@ export class PaletteList extends Component {
   }
 
   render() {
-    const { palettes, classes } = this.props
+    const { palettes, classes, deletePalette } = this.props
     return (
       <div className={classes.root}>
         <div className={classes.container}>
