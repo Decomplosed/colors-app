@@ -38,5 +38,19 @@ export default {
     margin: '0 auto',
     postion: 'relative',
     marginBottom: '-3.5px'
+  },
+  delete: {},
+  deleteIcon: {
+    color: 'white',
+    backgroundColor: '#eb3d30',
+    width: '20px',
+    height: '20px',
+    position: 'absolute',
+    right: '0',
+    top: '0',
+    padding: '8px',
+    zIndex: '10',
+    opacity: '0',
+    transition: 'all 0.3s ease-in-out'
   }
 }
