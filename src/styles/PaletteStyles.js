@@ -37,6 +37,10 @@ export default {
       textTransform: 'uppercase',
       textDecoration: 'none',
       border: 'none'
+    },
+    [sizes.down('xs')]: {
+      width: '100%',
+      height: '10%'
     }
   }
 }
