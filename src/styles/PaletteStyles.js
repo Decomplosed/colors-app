@@ -1,3 +1,5 @@
+import sizes from './sizes'
+
 export default {
   palette: {
     height: '100vh',
