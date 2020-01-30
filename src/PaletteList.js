@@ -19,25 +19,19 @@ export class PaletteList extends Component {
             <h1 className={classes.heading}>React Colors</h1>
             <Link to="/palette/new">Create Palette</Link>
           </nav>
-          <div className={classes.palettes}>
-            <TransitionGroup>
-              {palettes.map(palette => (
-                <CSSTransition
+          <TransitionGroup className={classes.palettes}>
+            {palettes.map(palette => (
+              <CSSTransition key={palette.id} classNames="fade" timeout={500}>
+                <MiniPalette
+                  {...palette}
+                  handleClick={() => this.goToPalette(palette.id)}
                   key={palette.id}
-                  classNames="fade"
-                  timeout={3000}
-                >
-                  <MiniPalette
-                    {...palette}
-                    handleClick={() => this.goToPalette(palette.id)}
-                    key={palette.id}
-                    id={palette.id}
-                    handleDelete={deletePalette}
-                  />
-                </CSSTransition>
-              ))}
-            </TransitionGroup>
-          </div>
+                  id={palette.id}
+                  handleDelete={deletePalette}
+                />
+              </CSSTransition>
+            ))}
+          </TransitionGroup>
         </div>
       </div>
     )
