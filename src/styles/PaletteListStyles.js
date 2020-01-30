@@ -13,7 +13,10 @@ export default {
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    [sizes.down('lg')]: {
+      width: '80%'
+    }
   },
   nav: {
     display: 'flex',
