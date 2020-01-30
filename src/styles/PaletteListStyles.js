@@ -8,8 +8,16 @@ export default {
     justifyContent: 'center',
     background: 'blue',
     height: '100vh',
-    backgroundColor: '#064cd5',
-    backgroundImage: `url(${bg})`
+    /* background by SVGBackgrounds.com */
+    backgroundColor: '#2b29aa',
+    backgroundImage: `url(${bg})`,
+    overflow: 'scroll'
+  },
+  heading: {
+    fontSize: '2rem',
+    [sizes.down('sm')]: {
+      fontSize: '1.4rem'
+    }
   },
   container: {
     width: '50%',
