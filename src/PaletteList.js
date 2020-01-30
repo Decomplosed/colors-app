@@ -52,7 +52,9 @@ export class PaletteList extends Component {
           <List>
             <ListItem>
               <ListItemAvatar>
-                <Avatar>
+                <Avatar
+                  style={{ backgroundColor: blue[100], color: blue[600] }}
+                >
                   <CheckIcon />
                 </Avatar>
               </ListItemAvatar>
@@ -60,7 +62,7 @@ export class PaletteList extends Component {
             </ListItem>
             <ListItem>
               <ListItemAvatar>
-                <Avatar>
+                <Avatar style={{ backgroundColor: red[100], color: red[600] }}>
                   <CloseIcon />
                 </Avatar>
               </ListItemAvatar>
