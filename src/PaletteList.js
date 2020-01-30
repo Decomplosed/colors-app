@@ -20,15 +20,17 @@ export class PaletteList extends Component {
             <Link to="/palette/new">Create Palette</Link>
           </nav>
           <div className={classes.palettes}>
-            {palettes.map(palette => (
-              <MiniPalette
-                {...palette}
-                handleClick={() => this.goToPalette(palette.id)}
-                key={palette.id}
-                id={palette.id}
-                handleDelete={deletePalette}
-              />
-            ))}
+            <TransitionGroup>
+              {palettes.map(palette => (
+                <MiniPalette
+                  {...palette}
+                  handleClick={() => this.goToPalette(palette.id)}
+                  key={palette.id}
+                  id={palette.id}
+                  handleDelete={deletePalette}
+                />
+              ))}
+            </TransitionGroup>
           </div>
         </div>
       </div>
