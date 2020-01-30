@@ -45,8 +45,11 @@ export default {
       border: '1px solid white',
       padding: '0.5rem 0.75rem',
       borderRadius: '5px',
+      background: '#f50057',
+      border: 'none',
+      fontWeight: '700',
       '&:hover': {
-        color: 'blue',
+        color: '#2b29aa',
         backgroundColor: 'white',
         transition: '0.5s'
       }
@@ -63,7 +66,7 @@ export default {
     },
     [sizes.down('xs')]: {
       gridTemplateColumns: 'repeat(1, 100%)',
-      gridGap: '1rem'
+      gridGap: '1.4rem'
     }
   }
 }
