@@ -22,7 +22,11 @@ export class PaletteList extends Component {
           <div className={classes.palettes}>
             <TransitionGroup>
               {palettes.map(palette => (
-                <CSSTransition>
+                <CSSTransition
+                  key={palette.id}
+                  classNames="fade"
+                  timeout={3000}
+                >
                   <MiniPalette
                     {...palette}
                     handleClick={() => this.goToPalette(palette.id)}
