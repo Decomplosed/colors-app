@@ -40,6 +40,7 @@ export class PaletteList extends Component {
 
   render() {
     const { palettes, classes, deletePalette } = this.props
+    const { openDeleteDialog } = this.state
     return (
       <div className={classes.root}>
         <div className={classes.container}>
