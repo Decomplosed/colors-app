@@ -22,6 +22,8 @@ export class PaletteList extends Component {
     this.state = {
       openDeleteDialog: false
     }
+    this.openDeleteDialog = this.openDeleteDialog.bind(this)
+    this.closeDialog = this.closeDialog.bind(this)
   }
 
   openDialog() {
