@@ -9,7 +9,7 @@ export default {
     background: 'blue',
     height: '100vh',
     backgroundColor: '#064cd5',
-    backgroundImage:
+    backgroundImage: `url(${bg})`
   },
   container: {
     width: '50%',
