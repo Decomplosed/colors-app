@@ -45,6 +45,17 @@ export class PaletteList extends Component {
             ))}
           </TransitionGroup>
         </div>
+        <Dialog open={true}>
+          <DialogTitle>Delete This Palette</DialogTitle>
+          <List>
+            <ListItem>
+              <ListItemAvatar></ListItemAvatar>
+            </ListItem>
+            <ListItem>
+              <ListItemAvatar></ListItemAvatar>
+            </ListItem>
+          </List>
+        </Dialog>
       </div>
     )
   }
