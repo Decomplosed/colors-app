@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import MiniPalette from './MiniPalette'
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { withStyles } from '@material-ui/styles'
 import styles from './styles/PaletteListStyles'
 
