@@ -19,10 +19,11 @@ import red from '@material-ui/core/colors/red'
 export class PaletteList extends Component {
   constructor(props) {
     super(props)
-    this.state={
-      
+    this.state = {
+      openDeleteDialog: false
     }
   }
+
   goToPalette(id) {
     this.props.history.push(`/palette/${id}`)
   }
