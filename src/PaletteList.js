@@ -56,13 +56,18 @@ export class PaletteList extends Component {
                   handleClick={() => this.goToPalette(palette.id)}
                   key={palette.id}
                   id={palette.id}
-                  handleDelete={deletePalette}
+                  // handleDelete={deletePalette}
+                  handleDelete={this.openDialog}
                 />
               </CSSTransition>
             ))}
           </TransitionGroup>
         </div>
-        <Dialog open={true} aria-labelledby="delete-dialog-title">
+        <Dialog
+          open={openDeleteDialog}
+          aria-labelledby="delete-dialog-title"
+          onClose={this.closeDialog}
+        >
           <DialogTitle id="delete-dialog-title">
             Delete This Palette
           </DialogTitle>
@@ -77,7 +82,7 @@ export class PaletteList extends Component {
               </ListItemAvatar>
               <ListItemText primary="Delete" />
             </ListItem>
-            <ListItem button>
+            <ListItem button onClick={this.closeDialog}>
               <ListItemAvatar>
                 <Avatar style={{ backgroundColor: red[100], color: red[600] }}>
                   <CloseIcon />
