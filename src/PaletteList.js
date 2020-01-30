@@ -47,8 +47,10 @@ export class PaletteList extends Component {
             ))}
           </TransitionGroup>
         </div>
-        <Dialog open={true}>
-          <DialogTitle>Delete This Palette</DialogTitle>
+        <Dialog open={true} aria-labelledby="delete-dialog-title">
+          <DialogTitle id="delete-dialog-title">
+            Delete This Palette
+          </DialogTitle>
           <List>
             <ListItem button>
               <ListItemAvatar>
