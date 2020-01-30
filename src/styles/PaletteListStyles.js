@@ -51,7 +51,6 @@ export default {
     '& a': {
       color: 'white',
       textDecoration: 'none',
-      border: '1px solid white',
       padding: '0.5rem 0.75rem',
       borderRadius: '5px',
       background: '#f50057',
