@@ -50,7 +50,7 @@ export class PaletteList extends Component {
         <Dialog open={true}>
           <DialogTitle>Delete This Palette</DialogTitle>
           <List>
-            <ListItem>
+            <ListItem button>
               <ListItemAvatar>
                 <Avatar
                   style={{ backgroundColor: blue[100], color: blue[600] }}
@@ -60,7 +60,7 @@ export class PaletteList extends Component {
               </ListItemAvatar>
               <ListItemText primary="Delete" />
             </ListItem>
-            <ListItem>
+            <ListItem button>
               <ListItemAvatar>
                 <Avatar style={{ backgroundColor: red[100], color: red[600] }}>
                   <CloseIcon />
