@@ -20,18 +20,25 @@ export class PaletteList extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      openDeleteDialog: false
+      openDeleteDialog: false,
+      deletingId: ''
     }
     this.openDialog = this.openDialog.bind(this)
     this.closeDialog = this.closeDialog.bind(this)
+    this.handleDelete = this.handleDelete.bind(this)
   }
 
-  openDialog() {
-    this.setState({ openDeleteDialog: true })
+  openDialog(id) {
+    this.setState({ openDeleteDialog: true, deletingId: id })
   }
 
   closeDialog() {
-    this.setState({ openDeleteDialog: false })
+    this.setState({ openDeleteDialog: false, deletingId: '' })
+  }
+
+  handleDelete() {
+    this.props.deletePalette(this.state.deletingId)
+    this.closeDialog()
   }
 
   goToPalette(id) {
@@ -40,7 +47,7 @@ export class PaletteList extends Component {
 
   render() {
     const { palettes, classes, deletePalette } = this.props
-    const { openDeleteDialog } = this.state
+    const { openDeleteDialog, deletingId } = this.state
     return (
       <div className={classes.root}>
         <div className={classes.container}>
@@ -57,7 +64,7 @@ export class PaletteList extends Component {
                   key={palette.id}
                   id={palette.id}
                   // handleDelete={deletePalette}
-                  handleDelete={this.openDialog}
+                  openDialog={this.openDialog}
                 />
               </CSSTransition>
             ))}
@@ -72,7 +79,7 @@ export class PaletteList extends Component {
             Delete This Palette
           </DialogTitle>
           <List>
-            <ListItem button>
+            <ListItem button onClick={this.handleDelete}>
               <ListItemAvatar>
                 <Avatar
                   style={{ backgroundColor: blue[100], color: blue[600] }}
