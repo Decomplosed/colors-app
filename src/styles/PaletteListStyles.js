@@ -7,7 +7,9 @@ export default {
     alignItems: 'flex-start',
     justifyContent: 'center',
     background: 'blue',
-    height: '100vh'
+    height: '100vh',
+    backgroundColor: '#064cd5',
+    backgroundImage:
   },
   container: {
     width: '50%',
