@@ -24,6 +24,14 @@ export class PaletteList extends Component {
     }
   }
 
+  openDialog() {
+    this.setState({ openDeleteDialog: true })
+  }
+
+  closeDialog() {
+    this.setState({ openDeleteDialog: false })
+  }
+
   goToPalette(id) {
     this.props.history.push(`/palette/${id}`)
   }
