@@ -17,6 +17,12 @@ import blue from '@material-ui/core/colors/blue'
 import red from '@material-ui/core/colors/red'
 
 export class PaletteList extends Component {
+  constructor(props) {
+    super(props)
+    this.state={
+      
+    }
+  }
   goToPalette(id) {
     this.props.history.push(`/palette/${id}`)
   }
