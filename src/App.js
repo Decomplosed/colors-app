@@ -9,6 +9,8 @@ import NewPaletteForm from './NewPaletteForm'
 import { generatePalette } from './colorHelpers'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
+import './App.css'
+
 class App extends Component {
   constructor(props) {
     super(props)
