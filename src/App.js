@@ -7,6 +7,7 @@ import SingleColorPalette from './SingleColorPalette'
 import seedColors from './seedColors'
 import NewPaletteForm from './NewPaletteForm'
 import { generatePalette } from './colorHelpers'
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
 class App extends Component {
   constructor(props) {
