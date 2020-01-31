@@ -25,7 +25,7 @@ class MiniPalette extends PureComponent {
     ))
 
     return (
-      <div className={classes.root} onClick={handleClick}>
+      <div className={classes.root} onClick={() => handleClick(id)}>
         <DeleteIcon
           className={classes.deleteIcon}
           onClick={this.deletePalette}
