@@ -60,7 +60,7 @@ export class PaletteList extends Component {
               <CSSTransition key={palette.id} classNames="fade" timeout={500}>
                 <MiniPalette
                   {...palette}
-                  handleClick={() => this.goToPalette(palette.id)}
+                  handleClick={this.goToPalette}
                   key={palette.id}
                   id={palette.id}
                   // handleDelete={deletePalette}
