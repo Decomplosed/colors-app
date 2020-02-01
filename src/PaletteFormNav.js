@@ -39,7 +39,13 @@ class PaletteFormNav extends Component {
   }
 
   render() {
-    const { classes, open, palettes, handleSubmit } = this.props
+    const {
+      classes,
+      open,
+      palettes,
+      handleSubmit,
+      handleDrawerOpen
+    } = this.props
     const { formShowing } = this.state
     return (
       <div className={classes.root}>
