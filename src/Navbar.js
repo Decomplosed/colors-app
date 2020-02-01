@@ -29,7 +29,7 @@ export class Navbar extends Component {
 
   render() {
     const { level, changeLevel, showingAllColors, classes } = this.props
-    const { format } = this.state
+    const { format, open } = this.state
     return (
       <header className={classes.Navbar}>
         <div className={classes.logo}>
