@@ -108,10 +108,6 @@ class App extends Component {
           </TransitionGroup>
         )}
       />
-
-      // <div className="App" >
-      //   <Palette palette={generatePalette(seedColors[4])} />
-      // </div>
     )
   }
 }
