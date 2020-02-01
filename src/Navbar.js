@@ -58,7 +58,7 @@ export class Navbar extends Component {
         </div>
         <Snackbar
           anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
-          open={this.state.open}
+          open={open}
           autoHideDuration={2000}
           message={
             <span id="message-id">
