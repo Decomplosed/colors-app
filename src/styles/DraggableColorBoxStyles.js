@@ -29,7 +29,7 @@ export default {
   },
   boxContent: {
     color: props =>
-      chroma(props.background).luminance() <= 0.08
+      chroma(props.color).luminance() <= 0.08
         ? 'rgba(255 ,255 ,255 ,0.8)'
         : 'rgba(0 ,0 ,0 ,0.6)',
     position: 'absolute',
