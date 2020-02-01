@@ -28,12 +28,13 @@ export default {
     }
   },
   boxContent: {
+    color: props =>
+      chroma(props.background).luminance() <= 0.08 ? 'white' : 'black',
     position: 'absolute',
     width: '100%',
     left: '0px',
     bottom: '0px',
     padding: '10px',
-    color: '#000000',
     letterSpacing: '1px',
     textTransform: 'uppercase',
     fontSize: '12px',
